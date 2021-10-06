@@ -7,6 +7,7 @@ ML/DL, NLP 관련 공부 기록
 * [ACL2020 Tutorial](https://github.com/danqi/acl2020-openqa-tutorial)
 * [oh! suz's MRC Cookbook](https://www.ohsuz.dev/mrc-cookbook)
 * [Jeonsworld's NLP 관련 논문 리뷰 포스팅](https://jeonsworld.github.io/)
+* [월간 자연어처리 - Facebook](https://www.facebook.com/monthly.nlp?hc_ref=ART_4x3Knm-Y_6Rw38lFMtWmKZ8SdL4fWSzm2I9CiaYwJAtFIHk9mP_T7mK69NC8V2A&fref=nf&__xts__[0]=68.ARD8SbISh91tv-3NTdye910Za6oW4Nkfc9S3jAAX3n9xWPQjLdTDJA9eCQh_J10Y3ROSXAR5k_zgzd7q77OEgRaN0yMMkp4XdSPzROUANUkOJajbcUBhbaPtD_riFOG2cAWkFIAJ35CE3XQvrYj4246-Ggebd06AhnUK_WuOr-nZFECcT_txc0ekAqJC_OEvZaGzcYr8CwWwjCCYO2cg3reKqV6CrF2unShmou5PdNlmFzpiNrmYlltICYZxFX-mQdn0eBXJkpxKBr_b_pD1LnBO2e0QcFI_cC6plzalWQ3RbB6daGM)
 
 ## Leaderboard
 ### [MS MARCO Passage Trieval (10/26/2018 ~ Present)](microsoft.github.io/msmarco/)
