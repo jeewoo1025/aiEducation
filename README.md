@@ -18,13 +18,14 @@ ML/DL, NLP 관련 공부 기록
 ### [Natural Questions](https://ai.google.com/research/NaturalQuestions/leaderboard)
 Short/Long Answer로 각각 2개 부문으로 나눠짐 <br>
 ※ 2021.10.06 현재 Ranking : Long Answer부문 - PoolingFormer, Short Answer부문 - ReflectionNet-ensemble
+<br>
 
 ## 관련 논문들
 ### 1. DrQA
 ### 2. ORQA
 ### 3. REALM
 ### 4. DPR
-
+<br>
 
 ## LM models
 ### BERT 기반 RoBERTa 등
