@@ -9,6 +9,7 @@ ML/DL, NLP 관련 공부 기록
 <br>
 
 ##  📝  Study
+* 나동빈 [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
 * [How to Build an Open-Domain Question Answering System?](https://lilianweng.github.io/lil-log/2020/10/29/open-domain-question-answering.html#open-book-qa-retriever-reader)
 * [ACL2020 Tutorial](https://github.com/danqi/acl2020-openqa-tutorial)
 * [oh! suz's MRC Cookbook](https://www.ohsuz.dev/mrc-cookbook)
