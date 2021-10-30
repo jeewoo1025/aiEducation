@@ -4,7 +4,7 @@ ML/DL, NLP 관련 공부 기록
 
 ## NLP 논문 (년도 순)
 * (NIPS 2014) Sequence to Sequence Learning with Neural Networks 
-  * [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf)
+  * [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
 
 <br>
 
