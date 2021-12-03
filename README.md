@@ -4,16 +4,20 @@ ML/DL, NLP 관련 공부 기록
 
 ## NLP 논문 (년도 순)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
-
 * Attetion (ICLR 2015) : [Paper Link]() 
-
 * Transformer (NIPS 2017) : [Paper Link]() 
-
 * GPT-1 (2018) : [Paper Link]() 
-
 * BERT (NACCL 2019) : [Paper Link]() 
-
 * GPT-3 (2020) : [Paper Link]() 
+<br>
+
+## 성능 측정 방법
+1. BLEU 
+* Bilingual Evaluation Understudy
+* 기계번역의 성능이 얼마나 뛰어난가를 측정하기 위해 사용함
+* 기계 번역 결과와 사람이 직접 번역한 결과가 얼마나 유사한지 비교하여 번역에 대한 성능을 측정하는 방법
+* 높을 수록 성능이 더 좋다
+* 장점 : 언어에 구애받지 않음, 계산 속도가 빠름
 <br>
 
 ##  📝  Study
