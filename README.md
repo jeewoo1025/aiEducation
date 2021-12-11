@@ -12,7 +12,7 @@ ML/DL, NLP 관련 공부 기록
 <br>
 
 ## 성능 측정 방법
-1. BLEU 
+1. **BLEU** 
 * Bilingual Evaluation Understudy
 * 기계번역의 성능이 얼마나 뛰어난가를 측정하기 위해 사용함
 * 기계 번역 결과와 사람이 직접 번역한 결과가 얼마나 유사한지 비교하여 번역에 대한 성능을 측정하는 방법
@@ -21,7 +21,11 @@ ML/DL, NLP 관련 공부 기록
 <br>
 
 ##  📝  Study
-* 나동빈 [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
+### 나동빈
+* [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
+* [컴퓨터 공학과를 위한 최신 논문 찾아 읽는 방법 정리](https://www.youtube.com/watch?v=FPcdxHCxH_o)
+<br>
+
 * [How to Build an Open-Domain Question Answering System?](https://lilianweng.github.io/lil-log/2020/10/29/open-domain-question-answering.html#open-book-qa-retriever-reader)
 * [ACL2020 Tutorial](https://github.com/danqi/acl2020-openqa-tutorial)
 * [oh! suz's MRC Cookbook](https://www.ohsuz.dev/mrc-cookbook)
