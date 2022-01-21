@@ -19,6 +19,7 @@ ML/DL, NLP 관련 공부 기록
 
 ### ✔ 텍스트 요약 
 * Must-read paper : https://github.com/jeewoo1025/Text-Summarization-Repo
+* 강필성 교수님의 DSBA 연구실 자료 : [github](https://github.com/pilsung-kang/text-analytics) / [youtube](https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg)
 <br>
 
 ## 🔎 성능 측정 방법
