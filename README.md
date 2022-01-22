@@ -1,6 +1,17 @@
 # 📚 aiEducation
 ML/DL, NLP 관련 공부 기록
+
+* 기간 : 2021 ~ Present
 <br><br>
+
+## 🔎 논문 찾는 Tips
+1. [paperswithcode](https://paperswithcode.com/sota)에서 tasks 위주로 SOTA 논문을 보여줌 <br> 
+   ✔ Most implemented paper를 참고하면 어떤 논문이 가장 많이 인용되었는지 확인가능함 <br><br> 
+2. github에서 task 검색 <br> 이때 `awesome [특정 task]`로 검색하면 curated list 게시물을 쉽게 찾을 수 있다. <br> 얼마나 중요한 논문인지는 Star 갯수나 fork 수로 판별가능함
+   <br> <br>
+
+3. EMNLP, ACL 등 Impact Factor가 높은 학회들에서 발표한 논문들로 최신 트렌드를 알 수 있다
+<br>
 
 ## ⭐ NLP 필수 논문 (년도 순)
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
@@ -19,15 +30,25 @@ ML/DL, NLP 관련 공부 기록
 
 ### ✔ 텍스트 요약 
 * Must-read paper : https://github.com/jeewoo1025/Text-Summarization-Repo
+* 강필성 교수님의 DSBA 연구실 자료 : [github](https://github.com/pilsung-kang/text-analytics) / [youtube](https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg)
+* mathsyouth의 curated list: [awesome-text-summarization](https://github.com/mathsyouth/awesome-text-summarization)
 <br>
 
-## 🔎 성능 측정 방법
+## 📊 성능 측정 방법
 1. **BLEU** 
 * Bilingual Evaluation Understudy
 * 기계번역의 성능이 얼마나 뛰어난가를 측정하기 위해 사용함
 * 기계 번역 결과와 사람이 직접 번역한 결과가 얼마나 유사한지 비교하여 번역에 대한 성능을 측정하는 방법
 * 높을 수록 성능이 더 좋다
 * 장점 : 언어에 구애받지 않음, 계산 속도가 빠름
+<br>
+
+2. **ROUGE / ROUGE 2.0**
+* Recall-Oriented Understudy for Gisting Evaluation
+* Text summarization의 성능을 측정하기 위해 사용함
+* ROUGE는 reference summary와 모델이 생성한 summary 사이에 겹치는 token이 많을수록 score가 높아진다. 하지만, 다른 단어라도 동일한 의미를 가지는 문장을 포함하지 않는다는 한계점이 있어서 이를 보완해서 나온게 ROUGE 2.0이다.
+* ROUGE 2.0은 synonymous(동의어)와 topic coverage를 포함하여 위의 issue를 보완하였다. → `ROUGE - {NN | Topic | TopicUniq} + Synonyms`
+* 그러나 여전히 완벽하게 score 매길 수 없지만 현재까지 가장 좋은 Evaluation 방법이라고 평가받는다.
 <br>
 
 ## 📬 투고 
@@ -41,7 +62,7 @@ ML/DL, NLP 관련 공부 기록
 <br>
 
 * **full/short paper**
-  * 학회마다 기대하는 long/short paper에 대한 스펙이 있기 때문에, call for paper를 참고하는 걸 추천한다
+  * 학회마다 기대하는 long/short paper에 대한 스펙이 있기 때문에, call for paper를 참고하는 걸 추천한다. 통상적으로 short paper는 long paper에 비해 상당히 짧고 long paper 투고가 더 인정 받는다. 
   * NAACL call for papers 2022 
     * Long paper : (8 pages) substantial, original, completed and unpublished work
     * Short paper : (4 pages) original and unpublished work
@@ -61,13 +82,3 @@ ML/DL, NLP 관련 공부 기록
 * [딥 러닝을 이용한 자연어 처리 입문(Tensoflow/Keras 사용)](https://wikidocs.net/book/2155)
 * [PyTorch로 시작하는 딥 러닝 입문](https://wikidocs.net/book/2788)
 * [BERT 돌아보기](https://docs.likejazz.com/bert/)
-<br><br>
-
-## 📊 Leaderboard
-### [MS MARCO Passage Trieval (10/26/2018 ~ Present)](microsoft.github.io/msmarco/)
-<br>
-
-### [Natural Questions](https://ai.google.com/research/NaturalQuestions/leaderboard)
-Short/Long Answer로 각각 2개 부문으로 나눠짐 <br>
-※ 2021.10.06 현재 Ranking : Long Answer부문 - PoolingFormer, Short Answer부문 - ReflectionNet-ensemble
-<br>
