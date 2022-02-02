@@ -11,7 +11,7 @@ ML/DL, NLP 관련 공부 기록
    <br> <br>
 
 3. EMNLP, ACL 등 Impact Factor가 높은 학회들에서 발표한 논문들로 최신 트렌드를 알 수 있다
-<br>
+<br><br>
 
 ## ⭐ NLP 필수 논문 (년도 순)
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
@@ -33,6 +33,7 @@ ML/DL, NLP 관련 공부 기록
 * 강필성 교수님의 DSBA 연구실 자료 : [github](https://github.com/pilsung-kang/text-analytics) / [youtube](https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg)
 * mathsyouth의 curated list: [awesome-text-summarization](https://github.com/mathsyouth/awesome-text-summarization)
 <br>
+<br>
 
 ## 📊 성능 측정 방법
 1. **BLEU** 
@@ -50,6 +51,7 @@ ML/DL, NLP 관련 공부 기록
 * ROUGE 2.0은 synonymous(동의어)와 topic coverage를 포함하여 위의 issue를 보완하였다. → `ROUGE - {NN | Topic | TopicUniq} + Synonyms`
 * 그러나 여전히 완벽하게 score 매길 수 없지만 현재까지 가장 좋은 Evaluation 방법이라고 평가받는다.
 <br>
+<br>
 
 ## 📬 투고 
 * **workshop** 
@@ -66,6 +68,7 @@ ML/DL, NLP 관련 공부 기록
   * NAACL call for papers 2022 
     * Long paper : (8 pages) substantial, original, completed and unpublished work
     * Short paper : (4 pages) original and unpublished work
+<br>
 <br>
 
 ##  📝  Study
