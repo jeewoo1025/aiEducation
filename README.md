@@ -79,8 +79,6 @@ ML/DL, NLP 관련 공부 기록
 <br>
 
 ##  📝  Study
-<br>
-
 ### 나동빈
 * [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
 * [컴퓨터 공학과를 위한 최신 논문 찾아 읽는 방법 정리](https://www.youtube.com/watch?v=FPcdxHCxH_o)
