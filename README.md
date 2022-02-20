@@ -18,7 +18,9 @@ ML/DL, NLP 관련 공부 기록
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
 * Attetion (ICLR 2015) : [Paper Link]() 
-* Transformer (NIPS 2017) : [Paper Link](https://arxiv.org/abs/1706.03762v5) 
+* Transformer (NIPS 2017) : [Paper Link](https://arxiv.org/abs/1706.03762v5)
+    * [Pytorch tutorial Harvard's NLP group](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
+
 * GPT (2018) : [Paper Link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) 
 * BERT (NACCL 2019) : [Paper Link](https://arxiv.org/abs/1910.13461v1) 
 * GPT-3 (2020) : [Paper Link]() 
