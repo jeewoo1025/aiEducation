@@ -23,7 +23,26 @@ ML/DL, NLP 관련 공부 기록
 
 * GPT (2018) : [Paper Link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) 
 * BERT (NACCL 2019) : [Paper Link](https://arxiv.org/abs/1910.13461v1) 
-* GPT-3 (2020) : [Paper Link]() 
+* GPT-2 (2019) : [Paper Link](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+* GPT-3 (NIPS 2020) : [Paper Link](https://arxiv.org/abs/2005.14165) 
+* BART (ACL 2020) : [Paper Link](https://arxiv.org/abs/1910.13461)
+<br>
+<br>
+
+### ✔ Summary
+||Base model|Pretraining Tasks|
+|:---:|:---:|:---:|
+|ELMo|two-layer biLSTM|next token prediction|
+|GPT|Transformer decoder|next token prediction|
+|BERT|Transformer encoder|mask language model + next sentence prediction|
+|ALBERT|same as BERT but light-weighted|mask language model + sentence order prediction|
+|GPT-2|Transformer decoder|next token prediction|
+|RoBERTa|same as BERT|mask language model (dynamic masking)|
+|T5|Transformer encoder + decoder|pre-trained on a multi-task mixture of unsupervised and supervised tasks and for which each task is converted into a text-to-text format.|
+|GPT-3|Transformer decoder|next token prediction|
+|BART|BERT encoder + GPT decoder|reconstruct text from a noised version|
+|ELECTRA|same as BERT|replace token detection|
+
 <br>
 <br>
 
@@ -94,4 +113,4 @@ ML/DL, NLP 관련 공부 기록
 * [Jeonsworld's NLP 관련 논문 리뷰 포스팅](https://jeonsworld.github.io/)
 * [월간 자연어처리 - Facebook](https://www.facebook.com/monthly.nlp?hc_ref=ART_4x3Knm-Y_6Rw38lFMtWmKZ8SdL4fWSzm2I9CiaYwJAtFIHk9mP_T7mK69NC8V2A&fref=nf&__xts__[0]=68.ARD8SbISh91tv-3NTdye910Za6oW4Nkfc9S3jAAX3n9xWPQjLdTDJA9eCQh_J10Y3ROSXAR5k_zgzd7q77OEgRaN0yMMkp4XdSPzROUANUkOJajbcUBhbaPtD_riFOG2cAWkFIAJ35CE3XQvrYj4246-Ggebd06AhnUK_WuOr-nZFECcT_txc0ekAqJC_OEvZaGzcYr8CwWwjCCYO2cg3reKqV6CrF2unShmou5PdNlmFzpiNrmYlltICYZxFX-mQdn0eBXJkpxKBr_b_pD1LnBO2e0QcFI_cC6plzalWQ3RbB6daGM)
 * [딥 러닝을 이용한 자연어 처리 입문(Tensoflow/Keras 사용)](https://wikidocs.net/book/2155)
-
+* [Generalized Language Models](https://lilianweng.github.io/lil-log/2019/01/31/generalized-language-models.html#gpt)
