@@ -12,7 +12,16 @@ ML/DL, NLP 관련 공부 기록
 
 3. EMNLP, ACL 등 Impact Factor가 높은 학회들에서 발표한 논문들로 최신 트렌드를 알 수 있다
 <br><br>
-<br>
+
+## 🍃 논문 작성법
+### Overleaf
+Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 문서 작성 시스템이다. 대다수의 논문들이 Latext를 이용해 작성되고, 공유되어 관리되어 있다. 
+이러한 Latex 프로그램을 사용해 논문 프로젝트를 편하게 관리하고 공유할 수 있도록 해주는 대표적인 서비스로 `Overleaf`가 있다. 
+`Overleaf > Template`에서 검색을 통해 제출할 학회의 논문 Template를 다운받아 작성하면 된다. 
+* 사이트 : https://www.overleaf.com/project
+* 사용법 : [나동빈 > 이공계열 학생을 위한 Latex 작성 방법 Feat. Overleaf](https://ndb796.tistory.com/342)
+
+<br><br>
 
 ## ⭐ NLP 필수 논문 (년도 순)
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
@@ -56,7 +65,6 @@ ML/DL, NLP 관련 공부 기록
 * Must-read paper : https://github.com/jeewoo1025/Text-Summarization-Repo
 * 강필성 교수님의 DSBA 연구실 자료 : [github](https://github.com/pilsung-kang/text-analytics) / [youtube](https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg)
 * mathsyouth의 curated list: [awesome-text-summarization](https://github.com/mathsyouth/awesome-text-summarization)
-<br>
 <br>
 <br>
 
