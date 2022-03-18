@@ -65,6 +65,9 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 * Must-read paper : https://github.com/jeewoo1025/Text-Summarization-Repo
 * 강필성 교수님의 DSBA 연구실 자료 : [github](https://github.com/pilsung-kang/text-analytics) / [youtube](https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg)
 * mathsyouth의 curated list: [awesome-text-summarization](https://github.com/mathsyouth/awesome-text-summarization)
+
+#### Dataset
+* [CNN-Daily Mail](https://github.com/abisee/cnn-dailymail)
 <br>
 <br>
 
