@@ -83,6 +83,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 
 2. **ROUGE / ROUGE 2.0**
 * Recall-Oriented Understudy for Gisting Evaluation
+* github : https://github.com/bheinzerling/pyrouge
 * Text summarization의 성능을 측정하기 위해 사용함
 * ROUGE는 reference summary와 모델이 생성한 summary 사이에 겹치는 token이 많을수록 score가 높아진다. 하지만, 다른 단어라도 동일한 의미를 가지는 문장을 포함하지 않는다는 한계점이 있어서 이를 보완해서 나온게 ROUGE 2.0이다.
 * ROUGE 2.0은 synonymous(동의어)와 topic coverage를 포함하여 위의 issue를 보완하였다. → `ROUGE - {NN | Topic | TopicUniq} + Synonyms`
