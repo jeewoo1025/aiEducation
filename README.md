@@ -109,6 +109,35 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 <br>
 <br>
 
+## Dataset Download
+Origin link : https://github.com/ShichaoSun/ConAbsSum
+### XSum
+* get dataset
+```
+wget https://cdn-datasets.huggingface.co/summarization/xsum.tar.gz
+tar -xzvf xsum.tar.gz
+```
+* Run
+```
+bash exp/run_consum_xsum.sh
+```
+<br>
+
+### CNN/DM
+* get dataset
+```
+wget https://cdn-datasets.huggingface.co/summarization/pegasus_data/cnn_dailymail.tar.gz
+tar -xzvf cnn_dailymail.tar.gz
+mv cnn_dailymail/validation.source cnn_dailymail/val.source 
+mv cnn_dailymail/validation.target cnn_dailymail/val.target 
+```
+
+* Run
+```
+bash exp/run_consum_cnndm.sh
+```
+<br>
+
 ##  📝  Study
 ### 나동빈
 * [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
