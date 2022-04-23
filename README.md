@@ -112,29 +112,22 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ## Dataset Download
 Origin link : https://github.com/ShichaoSun/ConAbsSum
 ### XSum
+* hungging face link :  https://huggingface.co/datasets/xsum
 * get dataset
 ```
 wget https://cdn-datasets.huggingface.co/summarization/xsum.tar.gz
 tar -xzvf xsum.tar.gz
 ```
-* Run
-```
-bash exp/run_consum_xsum.sh
-```
 <br>
 
 ### CNN/DM
+* hugging face link : https://huggingface.co/datasets/cnn_dailymail
 * get dataset
 ```
 wget https://cdn-datasets.huggingface.co/summarization/pegasus_data/cnn_dailymail.tar.gz
 tar -xzvf cnn_dailymail.tar.gz
 mv cnn_dailymail/validation.source cnn_dailymail/val.source 
 mv cnn_dailymail/validation.target cnn_dailymail/val.target 
-```
-
-* Run
-```
-bash exp/run_consum_cnndm.sh
 ```
 <br>
 
