@@ -35,6 +35,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 * GPT-2 (2019) : [Paper Link](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 * GPT-3 (NIPS 2020) : [Paper Link](https://arxiv.org/abs/2005.14165) 
 * BART (ACL 2020) : [Paper Link](https://arxiv.org/abs/1910.13461)
+   * huggingface bart : https://huggingface.co/transformers/v2.11.0/model_doc/bart.html
 <br>
 <br>
 
