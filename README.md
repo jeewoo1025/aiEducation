@@ -54,6 +54,13 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 |ELECTRA|same as BERT|replace token detection|
 
 <br>
+
+#### Huggingface/transformers document 
+Huggingface에서 제공하는 transformers document
+* [generate](https://huggingface.co/docs/transformers/v4.19.2/en/main_classes/text_generation#transformers.generation_utils.GenerationMixin.generate)
+* [BART](https://huggingface.co/docs/transformers/model_doc/bart)
+* [Pegasus](https://huggingface.co/docs/transformers/model_doc/pegasus)
+<br>
 <br>
 
 ### ✔ Open QA
