@@ -70,6 +70,7 @@ Huggingface에서 제공하는 transformers document
 <br>
 
 ### ✔ 텍스트 요약 
+Summarization study 정리 > [링크](https://github.com/jeewoo1025/aiEducation/blob/main/Summarization.md)
 * Must-read paper : https://github.com/jeewoo1025/Text-Summarization-Repo
 * 강필성 교수님의 DSBA 연구실 자료 : [github](https://github.com/pilsung-kang/text-analytics) / [youtube](https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg)
 * mathsyouth의 curated list: [awesome-text-summarization](https://github.com/mathsyouth/awesome-text-summarization)
