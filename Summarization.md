@@ -10,8 +10,8 @@
 
 # Paper Reading List by Jeewoo
 1) Abstractive Text Summarization using Sequence-to-Sequence RNNs and beyond (CONLL, 2016)
-2) Fine-tune BERT for Extractive Summarization (2019)
-3) Text Summarization with Pretrained Encoders (EMNLP, 2019)
+2) [Fine-tune BERT for Extractive Summarization](https://github.com/nlpyang/BertSum) (2019)
+3) [Text Summarization with Pretrained Encoders](https://github.com/nlpyang/PreSumm) (EMNLP, 2019)
 4) BART (ACL, 2020)
 5) Teaching Machines to Read and Comprehend (NIPS, 2015) (※ CNN/DM dataset)
 6) Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models (2016)
