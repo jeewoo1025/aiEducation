@@ -119,13 +119,18 @@ Summarization study 정리 > [링크](https://github.com/jeewoo1025/aiEducation/
 <br>
 
 ## Dataset Download
-Origin link : https://github.com/ShichaoSun/ConAbsSum
+|Dataset|Domain|Train|Val|Test|
+|:---:|:---:|:---:|:---:|:---:|
+|XSum|News|204,045|11,332|11,334|
+|CNN/DM|News|287,113|13,368|11,490|
+
 ### XSum
 * hungging face link :  https://huggingface.co/datasets/xsum
 * get dataset
 ```
-wget https://cdn-datasets.huggingface.co/summarization/xsum.tar.gz
-tar -xzvf xsum.tar.gz
+import datasets
+
+dataset = datasets.load_dataset("xsum")
 ```
 <br>
 
@@ -133,10 +138,9 @@ tar -xzvf xsum.tar.gz
 * hugging face link : https://huggingface.co/datasets/cnn_dailymail
 * get dataset
 ```
-wget https://cdn-datasets.huggingface.co/summarization/pegasus_data/cnn_dailymail.tar.gz
-tar -xzvf cnn_dailymail.tar.gz
-mv cnn_dailymail/validation.source cnn_dailymail/val.source 
-mv cnn_dailymail/validation.target cnn_dailymail/val.target 
+import datasets
+
+dataset = datasets.load_dataset("cnndm", "3.0.0")  # dataset name, version
 ```
 <br>
 
