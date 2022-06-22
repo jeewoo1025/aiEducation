@@ -21,6 +21,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 * 사이트 : https://www.overleaf.com/project
 * 사용법 : [나동빈 > 이공계열 학생을 위한 Latex 작성 방법 Feat. Overleaf](https://ndb796.tistory.com/342)
 
+▶ LaTex 기호 정리 : https://jjycjnmath.tistory.com/117
 <br><br>
 
 ## ⭐ NLP 필수 논문 (년도 순)
