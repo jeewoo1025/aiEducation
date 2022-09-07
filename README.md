@@ -145,6 +145,17 @@ dataset = datasets.load_dataset("cnndm", "3.0.0")  # dataset name, version
 ```
 <br>
 
+## 🔬 Library
+### Spacy 
+* link : https://spacy.io/usage/spacy-101#whats-spacy
+* English 자연어처리를 위한 Python 오픈소스 라이브러리. 
+* 지원 기능 : Tokenization, POS Tagging, Dependency Parsing, NER, Similarity ...
+```python
+import spacy
+nlp = spacy.load('en_core_web_sm')
+```
+<br>
+
 ##  📝  Study
 ### 나동빈
 * [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
