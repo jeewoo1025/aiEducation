@@ -27,18 +27,16 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ## ⭐ NLP 필수 논문 (년도 순)
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
-* Attetion (ICLR 2015) : [Paper Link]() 
+* bahdanau Attetion (ICLR 2015) : [Paper Link](https://arxiv.org/abs/1409.0473) 
 * Transformer (NIPS 2017) : [Paper Link](https://arxiv.org/abs/1706.03762v5)
     * [Pytorch tutorial Harvard's NLP group](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
-
 * GPT (2018) : [Paper Link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) 
 * BERT (NACCL 2019) : [Paper Link](https://arxiv.org/abs/1910.13461v1) 
 * GPT-2 (2019) : [Paper Link](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 * GPT-3 (NIPS 2020) : [Paper Link](https://arxiv.org/abs/2005.14165) 
 * BART (ACL 2020) : [Paper Link](https://arxiv.org/abs/1910.13461)
    * huggingface bart : https://huggingface.co/transformers/v2.11.0/model_doc/bart.html
-<br>
-<br>
+* RoBERTa (ICLR 2019) : [Paper Link](https://arxiv.org/abs/1907.11692)
 
 ### ✔ Summary
 ||Base model|Pretraining Tasks|
@@ -56,29 +54,29 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 
 <br>
 
-#### Huggingface/transformers document 
-Huggingface에서 제공하는 transformers document
-* [generate](https://huggingface.co/docs/transformers/v4.19.2/en/main_classes/text_generation#transformers.generation_utils.GenerationMixin.generate)
-* [BART](https://huggingface.co/docs/transformers/model_doc/bart)
-* [Pegasus](https://huggingface.co/docs/transformers/model_doc/pegasus)
-<br>
+## ⭐ Text Summarization 추천 논문
+### Baseline model
+* BART (ACL, 2020)
+* PEGASUS : Pre-training with Extracted Gap-sentences for Abstractive Summarization (ICML, 2020)
 <br>
 
-### ✔ Open QA
-* Danqi Chen github : https://github.com/danqi
-* [ACL2020 Tutorial: Open-Domain Question Answering](https://github.com/danqi/acl2020-openqa-tutorial) 
-<br>
+### Abstractive Summarization
+* Abstractive Text Summarization using Sequence-to-Sequence RNNs and beyond (CONLL, 2016)
+* Text Summarization with Pretrained Encoders (EMNLP, 2019)
+* RefSum: Refactoring Neural Summarization (NAACL, 2019)
+* SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization (ACL, 2021)
+* BRIO: Bringing Order to Abstractive Summarization (ACL, 2022)
 <br>
 
-### ✔ 텍스트 요약 
-Summarization study 정리 > [링크](https://github.com/jeewoo1025/aiEducation/blob/main/Summarization.md)
-* Must-read paper : https://github.com/jeewoo1025/Text-Summarization-Repo
-* 강필성 교수님의 DSBA 연구실 자료 : [github](https://github.com/pilsung-kang/text-analytics) / [youtube](https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg)
-* mathsyouth의 curated list: [awesome-text-summarization](https://github.com/mathsyouth/awesome-text-summarization)
-
-#### Dataset
-* [CNN-Daily Mail](https://github.com/abisee/cnn-dailymail)
+### Extractive Summarization
+* Extractive Summarization as Text Matching (ACL, 2020)
+* GSum: General Framework for Guided Neural Summarization (NAACL, 2021)
 <br>
+
+## Contrastive Learning 추천 논문
+### NLP
+* SimCSE: Simple Contrastive Learning of Sentence Embeddings (EMNLP, 2021)
+* Dense Passage Retrieval for Open Domain QA (EMNLP, 2020)
 <br>
 
 ## 📊 성능 측정 방법
