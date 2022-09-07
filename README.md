@@ -120,10 +120,10 @@ Summarization study 정리 > [링크](https://github.com/jeewoo1025/aiEducation/
 <br>
 
 ## Dataset Download
-|Dataset|Domain|Train|Val|Test|
-|:---:|:---:|:---:|:---:|:---:|
-|XSum|News|204,045|11,332|11,334|
-|CNN/DM|News|287,113|13,368|11,490|
+|Dataset|Domain|Train|Val|Test|Doc #Tokens|Sum #Tokens|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|XSum|News|204,045|11,332|11,334|437.21|23.87|
+|CNN/DM|News|287,113|13,368|11,490|782.67|58.33|
 
 ### XSum
 * hungging face link :  https://huggingface.co/datasets/xsum
