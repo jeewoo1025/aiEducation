@@ -165,6 +165,9 @@ nlp = spacy.load('en_core_web_sm')
 * [BERT 돌아보기](https://docs.likejazz.com/bert/)
 <br><br>
 
+### 기타 지식
+* [Knowledge Distillation](https://baeseongsu.github.io/posts/knowledge-distillation/)
+
 ### NLP basic
 * [oh! suz's NLP Cookbook](https://www.ohsuz.dev/nlp-cookbook)
 * [Jeonsworld's NLP 관련 논문 리뷰 포스팅](https://jeonsworld.github.io/)
