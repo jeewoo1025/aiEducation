@@ -10,7 +10,7 @@ ML/DL, NLP 관련 공부 기록
 2. github에서 task 검색 <br> 이때 `awesome [특정 task]`로 검색하면 curated list 게시물을 쉽게 찾을 수 있다. <br> 얼마나 중요한 논문인지는 Star 갯수나 fork 수로 판별가능함
    <br> <br>
 
-3. EMNLP, ACL 등 Impact Factor가 높은 학회들에서 발표한 논문들로 최신 트렌드를 알 수 있다
+3. ACL, EMNLP, NAACL 등 ACL 계열 학회 같이 h5-index가 높은 학회들(Conference)에서 발표한 논문들로 최신 트렌드를 알 수 있다. 
 <br><br>
 
 ## 🍃 논문 작성법
@@ -25,6 +25,10 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 <br><br>
 
 ## ⭐ NLP 필수 논문 (년도 순)
+논문 년도 순서별로 읽는 걸 추천한다. 왜냐하면, 이전 년도의 나온 논문들을 이해해야 현재 논문을 이해할 수 있기 때문! 
+예를들어, MASS paper를 알아야 BART paper를 정확히 이해할 수 있다.
+또한 유명한 논문들은 대부분 인용되어 이에 대한 를 paper에 추가하기도 한다. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행
+
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
 * bahdanau Attetion (ICLR 2015) : [Paper Link](https://arxiv.org/abs/1409.0473) 
@@ -56,15 +60,18 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 
 ## ⭐ Text Summarization 추천 논문
 ### Baseline model
+baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XSum dataset에서 많이 쓰인다. 
 * BART (ACL, 2020)
 * PEGASUS : Pre-training with Extracted Gap-sentences for Abstractive Summarization (ICML, 2020)
 <br>
 
 ### Abstractive Summarization
+논문을 읽을 때 short와 long paper를 구분해서 읽기 바란다. 
 * Abstractive Text Summarization using Sequence-to-Sequence RNNs and beyond (CONLL, 2016)
 * Text Summarization with Pretrained Encoders (EMNLP, 2019)
 * RefSum: Refactoring Neural Summarization (NAACL, 2019)
-* SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization (ACL, 2021)
+* SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization (ACL short, 2021)
+* SummaReranker: A Multi-Task Mixture-of-Experts Re-ranking Framework for Abstractive Summarization (ACL, 2022)
 * BRIO: Bringing Order to Abstractive Summarization (ACL, 2022)
 <br>
 
