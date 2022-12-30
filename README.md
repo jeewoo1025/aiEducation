@@ -25,9 +25,9 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 <br><br>
 
 ## ⭐ NLP 필수 논문 (년도 순)
-논문 년도 순서별로 읽는 걸 추천한다. 왜냐하면, 이전 년도의 나온 논문들을 이해해야 현재 논문을 이해할 수 있기 때문! 
+<b>논문 년도 순서별로 읽는 걸 추천한다. </b> 왜냐하면, 이전 년도의 나온 논문들을 이해해야 현재 논문을 이해할 수 있기 때문! 
 예를들어, MASS paper를 알아야 BART paper를 정확히 이해할 수 있다.
-또한 유명한 논문들은 대부분 인용되어 이에 대한 를 paper에 추가하기도 한다. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행
+또한 유명한 논문들은 대부분 인용되어서 paper에 추가됨. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행. 모두 2019년도에 publish됨.
 
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
@@ -37,10 +37,10 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 * GPT (2018) : [Paper Link](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) 
 * BERT (NACCL 2019) : [Paper Link](https://arxiv.org/abs/1910.13461v1) 
 * GPT-2 (2019) : [Paper Link](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+* RoBERTa (ICLR 2019) : [Paper Link](https://arxiv.org/abs/1907.11692)
 * GPT-3 (NIPS 2020) : [Paper Link](https://arxiv.org/abs/2005.14165) 
 * BART (ACL 2020) : [Paper Link](https://arxiv.org/abs/1910.13461)
    * huggingface bart : https://huggingface.co/transformers/v2.11.0/model_doc/bart.html
-* RoBERTa (ICLR 2019) : [Paper Link](https://arxiv.org/abs/1907.11692)
 
 ### ✔ Summary
 ||Base model|Pretraining Tasks|
@@ -66,7 +66,7 @@ baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XS
 <br>
 
 ### Abstractive Summarization
-논문을 읽을 때 short와 long paper를 구분해서 읽기 바란다. 
+논문을 읽을 때 short와 long paper를 구분해서 읽기 바란다. long과 short paper 각각의 contribution이 크게 차이가 나기 때문. 
 * Abstractive Text Summarization using Sequence-to-Sequence RNNs and beyond (CONLL, 2016)
 * Text Summarization with Pretrained Encoders (EMNLP, 2019)
 * RefSum: Refactoring Neural Summarization (NAACL, 2019)
@@ -81,9 +81,16 @@ baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XS
 <br>
 
 ## Contrastive Learning 추천 논문
+원래 Computer Vision에서 처음 소개된 기법이기 때문에 비전쪽 논문도 읽는 것을 추천함
+
+## Computer Vision
+* A Simple Framework for Contrastive Learning of Visual Representations (ICML, 2020)
+* Understanding contrastive representation learning through alignment and uniformity on the hypersphere (ICML, 2020) (처음으로 contrastive learning의 잘되는 핵심적인 이유인 alignment과 uniformity analysis를 제시함.)
+
 ### NLP
 * SimCSE: Simple Contrastive Learning of Sentence Embeddings (EMNLP, 2021)
-* Dense Passage Retrieval for Open Domain QA (EMNLP, 2020)
+* Debiased Contrastive Learning of Unsupervised Sentence Representations (ACL, 2022)
+* A Contrastive Framework for Learning Sentence Representations from Pairwise and Triple-wise Perspective in Angular Space (ACL, 2022)
 <br>
 
 ## 📊 성능 측정 방법
