@@ -11,6 +11,7 @@ ML/DL, NLP 관련 공부 기록
    <br> <br>
 
 3. ACL, EMNLP, NAACL 등 ACL 계열 학회 같이 h5-index가 높은 학회들(Conference)에서 발표한 논문들로 최신 트렌드를 알 수 있다. 
+* [AI h5-index](https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_artificialintelligence), [NLP h5-index](https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_computationallinguistics)
 <br><br>
 
 ## 🍃 논문 작성법
