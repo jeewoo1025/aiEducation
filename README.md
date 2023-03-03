@@ -29,6 +29,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 <b>논문 년도 순서별로 읽는 걸 추천한다. </b> 왜냐하면, 이전 년도의 나온 논문들을 이해해야 현재 논문을 이해할 수 있기 때문! 
 예를들어, MASS paper를 알아야 BART paper를 정확히 이해할 수 있다.
 또한 유명한 논문들은 대부분 인용되어서 paper에 추가됨. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행. 모두 2019년도에 publish됨.
+😀 아래의 models에 대한 공부하기 좋은 PyTorch code : https://github.com/paul-hyun/transformer-evolution
 
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
