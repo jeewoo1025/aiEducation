@@ -3,6 +3,7 @@ ML/DL, NLP 관련 공부 기록
 
 * 기간 : 2021 ~ Present
 * [석사 1년차에서의 회고록](https://velog.io/@jeewoo1025/%EC%84%9D%EC%82%AC-1%EB%85%84%EC%B0%A8%EC%97%90%EC%84%9C%EC%9D%98-%ED%9A%8C%EA%B3%A0%EB%A1%9D)
+* [NLP 관련 논문리뷰 및 기본개념 설명](https://velog.io/@jeewoo1025/series/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0)
 <br><br>
 
 ## 🔎 논문 찾는 Tips
