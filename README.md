@@ -2,6 +2,7 @@
 ML/DL, NLP 관련 공부 기록
 
 * 기간 : 2021 ~ Present
+* [석사 1년차에서의 회고록](https://velog.io/@jeewoo1025/%EC%84%9D%EC%82%AC-1%EB%85%84%EC%B0%A8%EC%97%90%EC%84%9C%EC%9D%98-%ED%9A%8C%EA%B3%A0%EB%A1%9D)
 <br><br>
 
 ## 🔎 논문 찾는 Tips
@@ -11,6 +12,7 @@ ML/DL, NLP 관련 공부 기록
    <br> <br>
 
 3. ACL, EMNLP, NAACL 등 ACL 계열 학회 같이 h5-index가 높은 학회들(Conference)에서 발표한 논문들로 최신 트렌드를 알 수 있다. 
+* [AI h5-index](https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_artificialintelligence), [NLP h5-index](https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_computationallinguistics)
 <br><br>
 
 ## 🍃 논문 작성법
@@ -27,7 +29,8 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ## ⭐ NLP 필수 논문 (년도 순)
 <b>논문 년도 순서별로 읽는 걸 추천한다. </b> 왜냐하면, 이전 년도의 나온 논문들을 이해해야 현재 논문을 이해할 수 있기 때문! 
 예를들어, MASS paper를 알아야 BART paper를 정확히 이해할 수 있다.
-또한 유명한 논문들은 대부분 인용되어서 paper에 추가됨. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행. 모두 2019년도에 publish됨.
+또한 유명한 논문들은 대부분 인용되어서 paper에 추가됨. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행. 모두 2019년도에 publish됨. <br>
+😀 아래의 models에 대한 공부하기 좋은 PyTorch code : https://github.com/paul-hyun/transformer-evolution
 
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
