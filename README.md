@@ -4,6 +4,7 @@ ML/DL, NLP 관련 공부 기록
 * 기간 : 2021 ~ Present
 * [석사 1년차에서의 회고록](https://velog.io/@jeewoo1025/%EC%84%9D%EC%82%AC-1%EB%85%84%EC%B0%A8%EC%97%90%EC%84%9C%EC%9D%98-%ED%9A%8C%EA%B3%A0%EB%A1%9D)
 * [NLP 관련 논문리뷰 및 기본개념 설명](https://velog.io/@jeewoo1025/series/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0)
+* [논문 초안 작성부터 결과 발표까지의 Process](https://velog.io/@jeewoo1025/%EB%85%BC%EB%AC%B8-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EB%B6%80%ED%84%B0-%EA%B2%B0%EA%B3%BC-%EB%B0%9C%ED%91%9C%EA%B9%8C%EC%A7%80%EC%9D%98-Process)
 <br><br>
 
 ## 🔎 논문 찾는 Tips
@@ -173,6 +174,9 @@ nlp = spacy.load('en_core_web_sm')
 <br>
 
 ##  📝  Study
+### ACL / EMNLP / NAACL
+* [ACL 2023: Generating Text from Language Models (ACL 2023: Tutorials)](https://rycolab.io/classes/acl-2023-tutorial/)
+
 ### 나동빈
 * [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
 * [컴퓨터 공학과를 위한 최신 논문 찾아 읽는 방법 정리](https://www.youtube.com/watch?v=FPcdxHCxH_o)
