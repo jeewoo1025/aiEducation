@@ -119,17 +119,18 @@ baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XS
 <br>
 
 ## 📬 투고 
-* **workshop** 
+* **Workshop** 
   * 대규모 학회는 시작할 때 앞뒤로 하루 규모의 workshop를 진행한다. 목적은 본 학회 참석자들이 specific한 키워드를 중심으로 모여서 진행하는 작은 학회같은 느낌. 보통 본 학회 내기 애매하거나 Working in Process를 공유하고 피드백 받는 자리이기도 하다.
   * Call for workshop을 열어 committee가 pass/non pass 여부를 주고 다시 그 workshop에서 받을 논문에 대한 공고를 낸다. 
 <br>
 
-* **tutorial** 
+* **Tutorial** 
   * 새로운 논문을 제안하기보다는 급 부상한 새로운 주제에 대한 개론적인 강의를 하는 하루 규모의 세션 (e.g. ACL 2020 open-domain QA tutorial)
 <br>
 
-* **full/short paper**
-  * 학회마다 기대하는 long/short paper에 대한 스펙이 있기 때문에, call for paper를 참고하는 걸 추천한다. 통상적으로 short paper는 long paper에 비해 상당히 짧고 long paper 투고가 더 인정 받는다. 
+* **Main Conference**
+  * 가장 중요한 메인 컨퍼런스이다. Accepted Papers의 저자들이 Oral 또는 Poster Session으로 Methods를 발표한다.
+  * ACL 계열 학회들 (ACL, EMNLP, NAACL, EACL, COLING)은 long/short paper로 나눠서 투고한다. 학회마다 기대하는 long/short paper에 대한 스펙이 있기 때문에, call for paper를 참고하는 걸 추천한다. 통상적으로 short paper는 long paper에 비해 상당히 짧고 contribution이 더 작다고 판단된다. 
   * NAACL call for papers 2022 
     * Long paper : (8 pages) substantial, original, completed and unpublished work
     * Short paper : (4 pages) original and unpublished work
