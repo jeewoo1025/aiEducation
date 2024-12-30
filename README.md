@@ -33,6 +33,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 예를들어, MASS paper를 알아야 BART paper를 정확히 이해할 수 있다.
 또한 유명한 논문들은 대부분 인용되어서 paper에 추가됨. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행. 모두 2019년도에 publish됨. <br>
 😀 아래의 models에 대한 공부하기 좋은 PyTorch code : https://github.com/paul-hyun/transformer-evolution
+LLM 관련 최신 paper list를 찾아보려면 [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM?tab=readme-ov-file)을 참조하는 걸 추천한다.
 
 * Word2Vec (ICLR 2013) : [Paper Link](https://arxiv.org/abs/1301.3781)
 * Seq2Seq (NIPS 2014) : [Paper Link](https://arxiv.org/abs/1409.3215) / [Seq2Seq.pdf](https://github.com/jeewoo1025/aiEducation/files/7446757/Seq2Seq.pdf) / [colab](https://colab.research.google.com/drive/1Jg4AYB-Ku4tuSIRchU8REvwqlsfsPD81#scrollTo=1OSgbkh0Vkq7)
@@ -61,6 +62,10 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 |BART|BERT encoder + GPT decoder|reconstruct text from a noised version|
 |ELECTRA|same as BERT|replace token detection|
 
+<br>
+
+## Code 추천 논문
+Code LLM 관련 최신 논문들은 [Awesome-Code-LLM](https://github.com/codefuse-ai/Awesome-Code-LLM)을 참조하는 걸 추천한다.
 <br>
 
 ## ⭐ Text Summarization 추천 논문
