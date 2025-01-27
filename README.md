@@ -8,6 +8,15 @@ ML/DL, NLP 관련 공부 기록
 * [LLMs vs Agents 비교](https://jeewoo1025.tistory.com/6)
 <br><br>
 
+## 최근 AI Trends Follow Up Tips
+최근 LLMs 동향이 빠르게 바뀌고 있어 아래 리스트를 매일 참조하는 걸 추천한다. 
+가장 추천하는 건 LinkedIn 가입 후 관련 포스트들을 Follow Up 하는 것이다. 국내외 연구자들의 의견들을 공유받을 수 있어 AI 연구자라면 필수!
+최근 가장 흥미롭게 읽었던 글은 [조경현 교수님 - i sensed anxiety and frustration at NeurIPS'24](https://kyunghyuncho.me/i-sensed-anxiety-and-frustration-at-neurips24/)인데 석사 졸업 후 회사에서 최근 느꼈던 실제 산업과 학계에서의 gap에 대하여 잘 정리된 글이라고 생각되었다.
+* [OpenAI Youtube](https://www.youtube.com/OpenAI)
+* [조코딩 Youtube](https://www.youtube.com/@jocoding)
+* [Deepseek Site](https://www.deepseek.com/)
+<br><br>
+
 ## 🔎 논문 찾는 Tips
 1. [paperswithcode](https://paperswithcode.com/sota)에서 tasks 위주로 SOTA 논문을 보여줌 <br> 
    ✔ Most implemented paper를 참고하면 어떤 논문이 가장 많이 인용되었는지 확인가능함 <br><br> 
@@ -67,9 +76,9 @@ LLM 관련 최신 paper list를 찾아보려면 [Awesome-LLM](https://github.com
 
 ## Code 추천 논문
 Code LLM 관련 최신 논문들은 [Awesome-Code-LLM](https://github.com/codefuse-ai/Awesome-Code-LLM)을 참조하는 걸 추천한다.
-<br>
+<br><br>
 
-## ⭐ Text Summarization 추천 논문
+## Text Summarization 추천 논문
 ### Baseline model
 baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XSum dataset에서 많이 쓰인다. 
 * BART (ACL, 2020)
