@@ -71,7 +71,9 @@ LLM 관련 최신 paper list를 찾아보려면 [Awesome-LLM](https://github.com
 |GPT-3|Transformer decoder|next token prediction|
 |BART|BERT encoder + GPT decoder|reconstruct text from a noised version|
 |ELECTRA|same as BERT|replace token detection|
-
+|LoRA|최근 학습 시 필수적으로 사용하는 기법|
+|CoT|CoT 개념 잡기에 좋음|
+|FLAN|Instruction-finetuning 처음으로 제시함.|
 <br>
 
 ## Code 추천 논문
@@ -100,10 +102,10 @@ baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XS
 * GSum: General Framework for Guided Neural Summarization (NAACL, 2021)
 <br>
 
-## Contrastive Learning 추천 논문
+#### Contrastive Learning 추천 논문
 원래 Computer Vision에서 처음 소개된 기법이기 때문에 비전쪽 논문도 읽는 것을 추천함
 
-## Computer Vision
+#### Computer Vision
 * A Simple Framework for Contrastive Learning of Visual Representations (ICML, 2020)
 * Understanding contrastive representation learning through alignment and uniformity on the hypersphere (ICML, 2020) (처음으로 contrastive learning의 잘되는 핵심적인 이유인 alignment과 uniformity analysis를 제시함.)
 
