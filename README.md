@@ -8,6 +8,9 @@ ML/DL, NLP 관련 공부 기록
 * [LLMs vs Agents 비교](https://jeewoo1025.tistory.com/6)
 <br><br>
 
+## News
+- `2025-03-29`: All_about_Agent/Agent.md 업로드
+
 ## 최근 AI Trends Follow Up Tips
 최근 LLMs 동향이 빠르게 바뀌고 있어 아래 리스트를 매일 참조하는 걸 추천한다. 
 가장 추천하는 건 LinkedIn 가입 후 관련 포스트들을 Follow Up 하는 것이다. 국내외 연구자들의 의견들을 공유받을 수 있어 AI 연구자라면 필수!
