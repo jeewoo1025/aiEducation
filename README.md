@@ -52,6 +52,13 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ### Agents
 - [LLM Agents에 관한 비주얼 가이드](https://tulip-phalange-a1e.notion.site/LLM-Agents-1b9c32470be2800fa672e82689018fc4)
 
+### OpenAI
+- [Function Calling 기능](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)
+
+## vLLM 
+- Github: https://github.com/vllm-project/vllm
+- [vLLM 사용법 - LLM 쉽게 빠르게 추론 및 서빙하기](https://lsjsj92.tistory.com/668)
+
 <br><br>
 
 ## 🦜 Reasoning
