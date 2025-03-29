@@ -38,6 +38,27 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ▶ LaTex 기호 정리 : https://jjycjnmath.tistory.com/117
 <br><br>
 
+## 🤖 LLMs
+### Deepseek R1
+- `2025-01-22` Deepseek-R1: https://github.com/deepseek-ai/DeepSeek-R1
+- [Building DeepSeek R1 from Scratch](https://github.com/FareedKhan-dev/train-deepseek-r1)
+- [DeepSeek-R1에 관한 비주얼 가이드](https://tulip-phalange-a1e.notion.site/DeepSeek-R1-189c32470be2801c94b6e5648735447d)
+
+### Llama-Factory
+- Paper: [LlamaFactory: Unified Efficient Fine-Tuning of 100+ Language Models](https://arxiv.org/abs/2403.13372) (ACL 2024)
+- Gtihub: https://github.com/hiyouga/LLaMA-Factory
+- `How to use in Korean`: [아이언맨 페르소나 Fine tuning 해보기](https://pseudorec.com/archive/monthly_pseudorec/12/)
+
+### Agents
+- [LLM Agents에 관한 비주얼 가이드](https://tulip-phalange-a1e.notion.site/LLM-Agents-1b9c32470be2800fa672e82689018fc4)
+
+<br><br>
+
+## 🦜 Reasoning
+- [Reasoning LLMs에 관한 비주얼 가이드](https://tulip-phalange-a1e.notion.site/Reasoning-LLMs-190c32470be2806d834ee0ad98aaa0b6)
+
+<br><br>
+
 ## ⭐ NLP 필수 논문 (년도 순)
 <b>논문 년도 순서별로 읽는 걸 추천한다. </b> 왜냐하면, 이전 년도의 나온 논문들을 이해해야 현재 논문을 이해할 수 있기 때문! 
 예를들어, MASS paper를 알아야 BART paper를 정확히 이해할 수 있다.
