@@ -242,3 +242,6 @@ nlp = spacy.load('en_core_web_sm')
 * [월간 자연어처리 - Facebook](https://www.facebook.com/monthly.nlp?hc_ref=ART_4x3Knm-Y_6Rw38lFMtWmKZ8SdL4fWSzm2I9CiaYwJAtFIHk9mP_T7mK69NC8V2A&fref=nf&__xts__[0]=68.ARD8SbISh91tv-3NTdye910Za6oW4Nkfc9S3jAAX3n9xWPQjLdTDJA9eCQh_J10Y3ROSXAR5k_zgzd7q77OEgRaN0yMMkp4XdSPzROUANUkOJajbcUBhbaPtD_riFOG2cAWkFIAJ35CE3XQvrYj4246-Ggebd06AhnUK_WuOr-nZFECcT_txc0ekAqJC_OEvZaGzcYr8CwWwjCCYO2cg3reKqV6CrF2unShmou5PdNlmFzpiNrmYlltICYZxFX-mQdn0eBXJkpxKBr_b_pD1LnBO2e0QcFI_cC6plzalWQ3RbB6daGM)
 * [딥 러닝을 이용한 자연어 처리 입문(Tensoflow/Keras 사용)](https://wikidocs.net/book/2155)
 * [Generalized Language Models](https://lilianweng.github.io/lil-log/2019/01/31/generalized-language-models.html#gpt)
+
+ ### 기타 Tools
+ - 다이어그램 툴 [Excalidraw](https://excalidraw.com/)
