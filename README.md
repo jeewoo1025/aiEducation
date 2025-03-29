@@ -55,7 +55,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ### OpenAI
 - [Function Calling 기능](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)
 
-## vLLM 
+### vLLM 
 - Github: https://github.com/vllm-project/vllm
 - [vLLM 사용법 - LLM 쉽게 빠르게 추론 및 서빙하기](https://lsjsj92.tistory.com/668)
 
