@@ -51,6 +51,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 
 ### Agents
 - [LLM Agents에 관한 비주얼 가이드](https://tulip-phalange-a1e.notion.site/LLM-Agents-1b9c32470be2800fa672e82689018fc4)
+- `Multi-Agent에서 가장 영향력 있는 논문` [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) (`2023`, 1903회 인용)
 
 ### OpenAI
 - [Function Calling 기능](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)
