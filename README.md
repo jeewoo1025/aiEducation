@@ -8,8 +8,9 @@ ML/DL, NLP 관련 공부 기록
 * [LLMs vs Agents 비교](https://jeewoo1025.tistory.com/6)
 <br><br>
 
-## News
+## 📢 Note
 - `2025-03-29`: All_about_Agent/Agent.md 업로드
+<br><br>
 
 ## 최근 AI Trends Follow Up Tips
 최근 LLMs 동향이 빠르게 바뀌고 있어 아래 리스트를 매일 참조하는 걸 추천한다. 
