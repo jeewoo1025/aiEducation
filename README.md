@@ -67,6 +67,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 
 ### Prompt Engineering
 - [Prompt Engineering Tutorial](https://github.com/NirDiamant/Prompt_Engineering)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/kr)
 
 <br><br>
 
