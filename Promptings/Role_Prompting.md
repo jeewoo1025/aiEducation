@@ -126,7 +126,8 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
         3. data 생성 및 훈련: 52k Alpaca instruction dataset 기반으로 고품질 데이터를 생성하고, 이를 LLaMA에 적용해 ExpertLLaMA를 제안.
 - Experiment
     - Dataset: 52k Alpaca dataset을 사용해 ExpertPrompting으로 새로운 QA data를 생성. 평가용으로 500개 랜덤 샘플링으로 추출. 
-    - Evaluation: [GPT-4-based evaluation](https://lmsys.org/blog/2023-03-30-vicuna/)으로 Expert 응답과 일반 응답의 품질 비교를 수행함. ExpertLlaMa의 성능은 ChatGPT 대비 상대 점수로 측정
+    - Evaluation: [GPT-4-based evaluation](https://lmsys.org/vicuna_eval/)으로 Expert 응답과 일반 응답의 품질 비교를 수행함. ExpertLlaMa의 성능은 ChatGPT 대비 상대 점수로 측정
+        - 9 Category: Writing, Role-Play, Common sense, Fermi, Counterfactual, Coding, Math, Generic, Knowledge (총 80 문제, 문제 당 10점 만점)
     - Baselines: Alpaca, Vicuna, LlaMA-GPT4
 - Result
     - 주요 성능 수치:
