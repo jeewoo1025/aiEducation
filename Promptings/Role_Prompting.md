@@ -11,7 +11,7 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
 ### When "A Helpful Assistant" Is Not Really Helpful: Personas in System Prompts Do Not Improve Performances of Large Language Models
 - link: https://arxiv.org/pdf/2311.10054
 - 저자: Mingqian Zheng, Jiaxin Pei, Lajanugen Logeswaran, Moontae Lee, David Jurgens
-- 년도/학회: 2024-10 / EMNLP 2024 Findings
+- 년도/학회: 2024-10 / EMNLP 2024 Findings (17회 인용)
 - Problem: LLM과의 상호작용에서 시스템 프롬프트에 "You are a helpful assistant"와 같은 페르소나를 추가하는 것이 일반적입니다. 그러나 이러한 페르소나가 모델의 객관적 작업 수행 능력에 어떤 영향을 미치는지는 명확하지 않습니다.
 - Takeaway
     - 162개의 다양한 사회적 역할(페르소나)을 선정하여 LLM의 성능에 미치는 영향을 체계적으로 평가했습니다.
@@ -35,7 +35,7 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
 ### Persona is a Double-edged Sword: Mitigating the Negative Impact of Role-playing Prompts in Zero-shot Reasoning Tasks
 - link: https://arxiv.org/abs/2408.08631
 - 저자: Junseok Kim, Nakyeong Yang, Kyomin Jung 
-- 년도/학회: 2024-10 / arXiv
+- 년도/학회: 2024-10 / arXiv (2회 인용)
 - Problem: 최근 연구들은 LLM에 특정 페르소나(예: "당신은 유능한 수학 교사입니다")를 부여하면 추론 능력이 향상될 수 있음을 보여주었습니다. 그러나 이러한 페르소나가 항상 긍정적인 효과를 주는 것은 아니며, 부정확하게 정의된 페르소나는 오히려 모델의 추론 능력을 저하시킬 수 있습니다.
 - Takeaway
     - 페르소나 프롬프트가 LLM의 추론 능력을 저해할 수 있음을 실험적으로 입증했습니다.
@@ -52,9 +52,9 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
         - Symbolic reasoning: Last Letter Concatenation, Coin Flip
         - Others: Data Understanding, Tracking Shuffled Objects
     - Model: GPT-4 (gpt-4-0613), GPT-3.5-turbo (gpt-3.5-turbo-0125), llama3
-    - Baselines
-        - Base: only Neutral solver
-        - Persona: only Persona solver
+    - Comparison
+        - Base: only Neutral solver (w/o persona prompt)
+        - Persona: only Persona solver (w/ persona prompt)
 - Results
     - Persona prompt는 12개 중 7개의 dataset에서 LLM의 추론 능력을 저하시킴
     - Jekyll & Hyde Framework는 모든 dataset에서 추론 능력을 향상시킴
@@ -62,43 +62,54 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
 - Limitations: Jekyll & Hyde 프레임워크는 각 질문에 대해 두 번의 추론과 평가를 수행하므로 계산 비용이 증가합니다.
 - Insight: Persona prompt가 항상 LLM의 성능을 향상시키지 않으며, 오히려 저해할 수 있음을 실험적으로 보여줌. Jekyll & Hyde Framework는 이를 완화하는 방법론임. 
 
-### Better Zero-Shot Reasoning with Role-Play Prompting
+### Better Zero-Shot Reasoning with Role-Play Prompting (2024 NAACL, 173회 인용)
 - link: https://aclanthology.org/2024.naacl-long.228/
 - Github: https://github.com/NKU-HLT/Role-Play-Prompting
 - 저자: Aobo Kong, Shiwan Zhao, Hao Chen, Qicheng Li, Yong Qin, Ruiqi Sun, Xin Zhou, Enzhi Wang, Xiaohang Dong
 - 년도/학회: 2024-03 / NAACL 
-- Problem: 대형 언어 모델(LLM)은 다양한 역할을 수행하는 능력을 갖추고 있으며, 이는 사용자와의 상호작용을 풍부하게 합니다. 그러나 이러한 역할 수행이 LLM의 추론 능력에 어떤 영향을 미치는지는 충분히 탐구되지 않았습니다. 본 논문은 전략적으로 설계된 역할 기반 프롬프트(role-play prompting)를 도입하여, 제로샷(zero-shot) 설정에서 다양한 추론 벤치마크에 대한 성능을 평가합니다.
+- Problem: LLM (ex. GPT-3, PaLM, Llama)은 promptings을 통해 다양한 taks에서 뛰어난 성능을 보여줌 (때론 fine-tuning보다 우수함). 대표적으로 role prompting (i.e., persona prompting) 기법이 존재함. 그러나 이러한 role-prompting이 LLM의 reasoning ability에 어떤 영향을 미치는지는 충분히 탐구되지 않았음. 본 논문은 Role-play prompting를 도입하여, 제로샷(zero-shot) 설정에서 다양한 reasoning 벤치마크에 대한 성능을 평가 및 분석함.
 - Takeaway
-    - 역할 기반 프롬프트를 도입하여 LLM의 제로샷 추론 성능을 향상시킴.
-    - 12개의 다양한 추론 벤치마크에서 역할 기반 프롬프트의 효과를 실증적으로 평가함.
-    - 역할 기반 프롬프트가 Chain-of-Thought(CoT) 추론을 유도하는 더 효과적인 트리거로 작용함을 보여줌.
+    - Role-Play Prompting (Role-Setting Prompt, Role-Feedback Prompt)를 도입하여 LLM의 제로샷 상태에서 Reasoning 성능을 향상시킴.
+    - 12개의 다양한 Reasoning 벤치마크에서 Role-Play Prompting의 효과를 실증적으로 평가함.
+    - Role-Play Prompting가 Chain-of-Thought(CoT) 보다 더 효과적인 트리거로 작용함을 보여줌.
 - Method
-    - Role-Setting Prompt
-    - Role-Feedback Prompt
+    - 1단계) Role-Setting Prompt
+        - task-specific role-play prompt를 구축. Role-Setting prompt를 디자인할 때, 1) 특정 task에 대해 차별화된 장점을 지닌 role을 선택 (Table 5)하고 2) 최대한 role에 대해 상세히 설명하는 것이 중요함 (Table 4).
+        - 예: From now on, you are a contestant in the general knowledge quiz contest adn always answer all kinds of common sense questions accurately. I am the moderator of the game and the final is about to start.
+    - 2단계) Role-Feedback Prompt
+        - 만들어진 role-play prompt를 바탕으로 (예상되는) model의 response를 추가. 본 논문에서는 다수 후보군을 생성한 뒤, 성능이 가장 높이 나온 것으로 선택함. 
+        - 예: That sounds like an exciting challenge! I'm ready to participate in the quiz contest as a contestant. Please go ahead and start the final round - I'm here to provide accurate answers to your commmon sense questions.
 - Experiment
-    - Dataset
-        - Arithmatic: Multi-Arith, GSM8K, AddSub, AQUA-RAT, SingleEq, SVAMP
-        - Commonsense reasoning: CSQA, StrategyQA
-        - Symbolic reasoning: Last Letter Concatenation, Coin Flip
+    - Dataset (metric: Accuracy)
+        - Arithmatic (산술): Multi-Arith, GSM8K, AddSub, AQUA-RAT, SingleEq, SVAMP
+        - Commonsense reasoning (일반 상식 추론): CSQA, StrategyQA
+        - Symbolic reasoning (기호 추론): Last Letter Concatenation, Coin Flip
         - Others: Data Understanding, Tracking Shuffled Objects
     - Model: ChatGPT (gpt-3.5-turbo-0613)
-    - Baselines: Zero-Shot-CoT, Few-Shot-CoT
+    - Hyperpameters: greedy decoding (temp=0)
+    - Comparison:
+        - zero-shot prompting: user query w/o any additional prompt  
+        - [Zero-Shot CoT](https://proceedings.neurips.cc/paper_files/paper/2022/file/8bb0d291acd4acf06ef112099c16f326-Paper-Conference.pdf): user query w/ "Let's think step by step"
+        - [Few-Shot CoT](https://proceedings.neurips.cc/paper_files/paper/2022/file/9d5609613524ecf4f15af0f7b31abca4-Paper-Conference.pdf): user query w/ "Let's think step by step" + similar examples (question-reasoning processes-answer)
 - Result
     - 주요 성능 수치:
-        - AQuA 데이터셋에서 정확도가 53.5%에서 63.8%로 향상
-        - Last Letter Concatenation에서 정확도가 23.8%에서 84.2%로 향상
-    - 주요 결과 요약: 역할 기반 프롬프트는 대부분의 데이터셋에서 표준 제로샷 프롬프트보다 우수한 성능을 보였으며, Zero-Shot-CoT보다도 더 효과적인 CoT 유도 방법으로 나타남.
-    - 부가 실험/분석: 역할 기반 프롬프트가 CoT 추론을 자연스럽게 유도하여, 모델의 추론 능력을 향상시킴
+        - AQuA 데이터셋에서 accuarcy가 53.5% (zero-shot prompting) 대비 63.8%로 향상
+        - Last Letter 데이터셋에서 accuracy가 23.8% (zero-shot prompting) 대비 84.2%로 향상
+    - 주요 결과 요약:
+        - Role-Play Prompting은 대부분의 데이터셋에서 zero-shot prompting, zero-shot CoT보다 우수한 성능을 보임 (outperforming 10 out of 12, 9 out of 12)
+        - Few-Shot CoT과는 거의 tie함 (outperforming 6 out of 12)
+    - 부가 실험/분석: Role-Play Prompting가 단계적으로 reasoning process를 강화함을 보여줌 (Table 3) 
 - Limitations
-    - 특정 역할이 특정 작업에 더 적합할 수 있으므로, 역할 설정의 일반화에 대한 추가 연구가 필요함.
-    - 역할 기반 프롬프트의 설계가 수작업에 의존하므로, 자동화된 역할 생성 방법에 대한 연구가 요구됨.
+    - 특정 role이 특정 task에 더 적합할 수 있으므로, 역할 설정의 일반화에 대한 추가 연구가 필요함.
+    - 역할 기반 프롬프트의 설계가 수작업(hand-crafted)에 의존하므로, 자동화된(automated) 역할 생성 방법에 대한 연구가 요구됨.
 - Insight
-    - ??
+    - Role-Setting Prompt를 구축하는 방법에서 아이디어를 얻을 수 있었음. (Tip 2가지)
+    - zero-shot prompting/CoT 대비 전반적으로 우수한 성능한 확인할 수 있었지만 Few-shot CoT에서는 그렇지 않음. (경쟁력있는 성능 X)
 
-### ExpertPrompting: Instructing Large Language Models to be Distinguished Experts
+### ExpertPrompting: Instructing Large Language Models to be Distinguished Experts (2023, 130회 인용)
 - link: https://arxiv.org/pdf/2305.14688
 - 저자: Benfeng Xu, An Yang, Junyang Lin, Quan Wang, Chang Zhou, Yongdong Zhang, Zhendong Mao 
-- 년도/학회: 2025-03 / arXiv
+- 년도/학회: 2023-03 (처음 공개) => 2025-05 (Updated) / arXiv
 - Problem
     - 이 논문은 어떤 문제를 해결하려고 하는가? 대형 언어 모델(LLM)의 응답 품질은 프롬프트 설계에 크게 의존한다. 이 논문은 LLM이 특정 도메인에서 전문가처럼 답변하도록 유도하는 프롬프트 전략을 제안하여, 일반적인 응답보다 더 정확하고 상세한 답변을 생성하는 문제를 해결하려 한다.
     - 이 문제는 왜 중요한가? LLM은 다양한 작업에서 활용되지만, 전문 지식이 필요한 질문에 대해 일반적인 답변을 제공하는 경우가 많다. 전문가 수준의 응답을 생성할 수 있다면, 교육, 고객 서비스, 의료 등 여러 분야에서 LLM의 실용성과 신뢰성이 크게 향상될 수 있다.
@@ -140,8 +151,8 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
 ## Summary & Insight
 1. Persona prompting은 open-ended tasks에 효과적이다.
 2. Persona prompting은 accuracy-based tasks (ex. classification)에 효과적이지 않다.
-3. 만약 persona를 사용한다면, specific (not simple), detailed (give more contexts), ideally automated (not hand-crafted)되어야 한다. 
+3. 만약 persona prompting를 적용한다면, specific (unambiguous), detailed (give more contexts), ideally automated (not hand-crafted)되어야 한다. 
 
 ※ open-ended tasks
-- 정의: 정해진 정답이 없고 다양한 방식의 응답이 가능한 task를 의미함.
-- 예시: text generation, summarization, question & answering, code generation
+- 정의: 정해진 정답이 없고 다양한 방식의 정답이 가능한 task를 의미함.
+- 예시: text generation, summarization, code generation
