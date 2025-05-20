@@ -128,22 +128,14 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
     - Dataset: 52k Alpaca dataset을 사용해 ExpertPrompting으로 새로운 QA data를 생성. 평가용으로 500개 랜덤 샘플링으로 추출. 
     - Evaluation: [GPT-4-based evaluation](https://lmsys.org/vicuna_eval/)으로 Expert 응답과 일반 응답의 품질 비교를 수행함. ExpertLlaMa의 성능은 ChatGPT 대비 상대 점수로 측정
         - 9 Category: Writing, Role-Play, Common sense, Fermi, Counterfactual, Coding, Math, Generic, Knowledge (총 80 문제, 문제 당 10점 만점)
-    - Baselines: Alpaca, Vicuna, LlaMA-GPT4
+    - Comparison: Alpaca, Vicuna, LlaMA-GPT4, LlaMA-GPT3.5, Llama-GPT3.5+, ChatGPT, Bard 
 - Result
     - 주요 성능 수치:
-        - ExpertPrompting으로 생성한 데이터는 일반 응답보다 "상당히 높은 품질"을 보임 (GPT-4 평가).
-        - ExpertLLaMA는 ChatGPT의 96% 수준 성능을 달성하며, Alpaca, Vicuna, LLaMA-GPT4를 능가.
-    - 주요 결과 요약:
-        - ExpertPrompting은 도메인별 전문성을 반영한 응답을 생성해 LLM의 성능을 크게 개선.
-        - ExpertLLaMA는 오픈소스 모델 중 가장 경쟁력 있는 성능을 보여 ChatGPT에 근접.
-    - 부가 실험/분석: 500개 샘플에 대한 GPT-4 평가에서 ExpertPrompting 응답이 일반 응답보다 더 상세하고 정확함을 확인.
+        - 500개 샘플에 대한 GPT-4 based evaluation에서 ExpertPrompting 응답이 Vanilla보다 "상당히 높은 품질"을 보임 (Win 48.5%, Lose 23.0%, Tie 143%) (Figure 3)
+        - ExpertLLaMA는 [Vicuna80](https://lmsys.org/vicuna_eval/)에서 ChatGPT의 96% 수준 성능을 달성하며, Alpaca, Vicuna, LLaMA-GPT4, Bard를 능가. (Figure 4)
+    - 주요 결과 요약: ExpertLLaMA는 모델 중 가장 경쟁력 있는 성능을 보여 ChatGPT에 근접.
 - Limitations
-    - 한계:
-        - 논문에서 명시적 한계는 언급되지 않았으나, ExpertPrompting은 전문가 정체성 생성 과정의 확장성이 잠재적 한계로 추론됨.
-        - 데이터셋 크기가 52k로 제한적이며, 더 큰 규모의 데이터로 훈련 시 성능 향상 가능성. 
-    - 향후 연구 방향:
-        - 더 큰 규모의 명령 데이터를 활용해 ExpertLLaMA 성능 개선.
-        - 다양한 LLM에 ExpertPrompting 적용을 통해 일반화 가능성 탐구.
+    - 한계: 데이터셋 크기가 52k로 제한적이며, 더 큰 규모의 데이터로 학습 시 성능 향상 가능성 존재. 
 - Insight
     - ExpertPrompting은 LLM의 응답 품질을 전문가 수준으로 끌어올리는 간단하면서도 효과적인 방법으로, 프롬프트 엔지니어링의 중요성을 다시금 강조.
     - 의문점: 전문가 정체성의 품질이 응답에 미치는 구체적 영향(예: 정체성의 세부 수준 vs. 성능)과, 다양한 도메인에서의 일반화 가능성에 대한 추가 분석이 필요해 보임. 또한, GPT-4 평가의 객관성에 대한 의문이 남음.
