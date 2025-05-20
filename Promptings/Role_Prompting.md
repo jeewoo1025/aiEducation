@@ -89,8 +89,8 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
     - Hyperpameters: greedy decoding (temp=0)
     - Comparison:
         - zero-shot prompting: user query w/o any additional prompt  
-        - [Zero-Shot CoT](https://proceedings.neurips.cc/paper_files/paper/2022/file/8bb0d291acd4acf06ef112099c16f326-Paper-Conference.pdf): user query w/ "Let's think step by step"
-        - [Few-Shot CoT](https://proceedings.neurips.cc/paper_files/paper/2022/file/9d5609613524ecf4f15af0f7b31abca4-Paper-Conference.pdf): user query w/ "Let's think step by step" + similar examples (question-reasoning processes-answer)
+        - [Zero-Shot CoT](https://arxiv.org/abs/2205.11916) (2022 NeurIPS, 4961회 인용): user query w/ "Let's think step by step"
+        - [Few-Shot CoT](https://arxiv.org/abs/2201.11903) (2022 NeurIPS, 14066회 인용): user query w/ "Let's think step by step" + similar examples (question-reasoning processes-answer)
 - Result
     - 주요 성능 수치:
         - AQuA 데이터셋에서 accuarcy가 53.5% (zero-shot prompting) 대비 63.8%로 향상
