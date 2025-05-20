@@ -108,24 +108,25 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
 
 ### ExpertPrompting: Instructing Large Language Models to be Distinguished Experts (2023, 130회 인용)
 - link: https://arxiv.org/pdf/2305.14688
+- Github: https://github.com/OFA-Sys/ExpertLLaMA
 - 저자: Benfeng Xu, An Yang, Junyang Lin, Quan Wang, Chang Zhou, Yongdong Zhang, Zhendong Mao 
 - 년도/학회: 2023-03 (처음 공개) => 2025-05 (Updated) / arXiv
 - Problem
-    - 이 논문은 어떤 문제를 해결하려고 하는가? 대형 언어 모델(LLM)의 응답 품질은 프롬프트 설계에 크게 의존한다. 이 논문은 LLM이 특정 도메인에서 전문가처럼 답변하도록 유도하는 프롬프트 전략을 제안하여, 일반적인 응답보다 더 정확하고 상세한 답변을 생성하는 문제를 해결하려 한다.
-    - 이 문제는 왜 중요한가? LLM은 다양한 작업에서 활용되지만, 전문 지식이 필요한 질문에 대해 일반적인 답변을 제공하는 경우가 많다. 전문가 수준의 응답을 생성할 수 있다면, 교육, 고객 서비스, 의료 등 여러 분야에서 LLM의 실용성과 신뢰성이 크게 향상될 수 있다.
+    - LLM의 응답 품질은 프롬프트 설계에 크게 의존함. 이 논문은 LLM이 특정 도메인에서 전문가처럼 답변하도록 유도하는 프롬프트 전략을 제안하여, 일반적인 응답보다 더 정확하고 상세한 답변을 생성함.
+    - LLM은 다양한 작업에서 활용되지만, 전문 지식이 필요한 질문에 대해 일반적인 답변을 제공하는 경우가 많음. 전문가 수준의 응답을 생성할 수 있다면, 교육, 고객 서비스, 의료 등 여러 분야에서 LLM의 실용성과 신뢰성이 크게 향상될 수 있기를 기대.
 - Takeaway
-    - Expert Prompting 제안: In-Context Learning을 활용해 각 명령에 맞는 전문가 정체성(expert identity)을 자동으로 생성하는 새로운 프롬프트 전략을 개발하여 LLM의 응답 품질을 향상시켰다.
-    - ExpertLlaMa 개발: ExpertPrompting을 적용해 GPT-3.5로 생성한 고품질 명령-응답 데이터를 기반으로 오픈소스 챗 어시스턴트 ExpertLLaMA를 훈련시켰다.
-    - 성능 향상 입증: GPT-4 기반 평가를 통해 ExpertLLaMA가 기존 오픈소스 모델(Alpaca, Vicuna 등)을 능가하며 원래 ChatGPT의 96% 수준에 달하는 성능을 달성함을 보였다.
+    - Expert Prompting 제안: In-Context Learning을 활용해 각 명령에 맞는 전문가 정체성(expert identity)을 자동으로 생성하는 새로운 프롬프트 전략을 개발하여 LLM의 응답 품질을 향상시킴.
+    - ExpertLlaMa (7B) 개발: ExpertPrompting을 적용해 GPT-3.5로 생성한 고품질 52k instruction-following data를 기반으로 Llama (7B) 학습.
+    - 성능 향상 입증: [GPT-4-based evaluation](https://lmsys.org/blog/2023-03-30-vicuna/)를 통해 ExpertLLaMA가 기존 오픈소스 모델(Alpaca, Vicuna 등)을 능가하며 원래 ChatGPT의 96% 수준에 달하는 성능을 달성함을 보임.
 - Method
-    - 전체 구조: ExpertPrompting은 특정 명령에 맞는 전문가 정체성을 자동 생성한 후, 이를 기반으로 LLM이 전문가처럼 답변하도록 유도한다. 생성된 데이터를 활용해 ExpertLLaMA를 훈련시킨다.
+    - 전체 구조: ExpertPrompting은 특정 instruction에 맞는 expert system prompt을 자동 생성한 후, 이를 기반으로 LLM이 전문가처럼 답변하도록 유도. 생성된 데이터를 활용해 Llama를 학습함.
     - 주요 구성 요소:   
-        1. 전문가 정체성 생성: In-Context Learning을 통해 명령별로 맞춤화된 전문가 설명(예: 영양사, 물리학자)을 생성.
-        2. 프롬프트 증강: 전문가 정체성을 명령에 추가해 LLM(GPT-3.5-turbo)에 입력.
-        3. 데이터 생성 및 훈련: 52k Alpaca 명령어를 기반으로 고품질 데이터를 생성하고, 이를 LLaMA에 적용해 ExpertLLaMA를 훈련.
+        1. expert identity 생성: In-Context Learning을 통해 명령별로 맞춤화된 expert system prompt(예: 영양사, 물리학자)을 생성.
+        2. prompt augmentation: expert prompt를 instruction에 추가해 LLM(GPT-3.5-turbo)에 입력.
+        3. data 생성 및 훈련: 52k Alpaca instruction dataset 기반으로 고품질 데이터를 생성하고, 이를 LLaMA에 적용해 ExpertLLaMA를 제안.
 - Experiment
     - Dataset: 52k Alpaca dataset을 사용해 ExpertPrompting으로 새로운 QA data를 생성. 평가용으로 500개 랜덤 샘플링으로 추출. 
-    - Evaluation: GPT-4를 활용한 automated evaluation으로 Expert 응답과 일반 응답의 품질 비교를 수행함. ExpertLlaMa의 성능은 ChatGPT 대비 상대 점수로 측정
+    - Evaluation: [GPT-4-based evaluation](https://lmsys.org/blog/2023-03-30-vicuna/)으로 Expert 응답과 일반 응답의 품질 비교를 수행함. ExpertLlaMa의 성능은 ChatGPT 대비 상대 점수로 측정
     - Baselines: Alpaca, Vicuna, LlaMA-GPT4
 - Result
     - 주요 성능 수치:
@@ -137,16 +138,14 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
     - 부가 실험/분석: 500개 샘플에 대한 GPT-4 평가에서 ExpertPrompting 응답이 일반 응답보다 더 상세하고 정확함을 확인.
 - Limitations
     - 한계:
-        - 논문에서 명시적 한계는 언급되지 않았으나, ExpertPrompting은 전문가 정체성 생성 과정의 확장성과 효율성 문제(수동 생성 비현실적)가 잠재적 한계로 추론됨.
+        - 논문에서 명시적 한계는 언급되지 않았으나, ExpertPrompting은 전문가 정체성 생성 과정의 확장성이 잠재적 한계로 추론됨.
         - 데이터셋 크기가 52k로 제한적이며, 더 큰 규모의 데이터로 훈련 시 성능 향상 가능성. 
     - 향후 연구 방향:
         - 더 큰 규모의 명령 데이터를 활용해 ExpertLLaMA 성능 개선.
         - 다양한 LLM에 ExpertPrompting 적용을 통해 일반화 가능성 탐구.
-        - 전문가 정체성 생성의 효율성을 높이는 자동화 기법 개발.
 - Insight
-    - 전체적으로 느낀 점: ExpertPrompting은 LLM의 응답 품질을 전문가 수준으로 끌어올리는 간단하면서도 효과적인 방법으로, 프롬프트 엔지니어링의 중요성을 다시금 강조한다. ExpertLLaMA의 오픈소스 접근성은 연구자와 개발자에게 큰 가치를 제공한다.
-    - 인상 깊은 부분: In-Context Learning을 활용한 자동화된 전문가 정체성 생성 아이디어가 실용적이고 확장 가능성이 높다. ChatGPT의 96% 성능을 오픈소스 모델로 달성한 점은 비용 효율적 대안으로서 큰 잠재력을 보여준다.
-    - 의문점: 전문가 정체성의 품질이 응답에 미치는 구체적 영향(예: 정체성의 세부 수준 vs. 성능)과, 다양한 도메인에서의 일반화 가능성에 대한 추가 분석이 필요해 보인다. 또한, GPT-4 평가의 객관성에 대한 의문이 남는다.
+    - ExpertPrompting은 LLM의 응답 품질을 전문가 수준으로 끌어올리는 간단하면서도 효과적인 방법으로, 프롬프트 엔지니어링의 중요성을 다시금 강조.
+    - 의문점: 전문가 정체성의 품질이 응답에 미치는 구체적 영향(예: 정체성의 세부 수준 vs. 성능)과, 다양한 도메인에서의 일반화 가능성에 대한 추가 분석이 필요해 보임. 또한, GPT-4 평가의 객관성에 대한 의문이 남음.
 
 ## Summary & Insight
 1. Persona prompting은 open-ended tasks에 효과적이다.
