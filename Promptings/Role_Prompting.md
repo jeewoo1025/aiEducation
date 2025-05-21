@@ -59,8 +59,8 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
     - Persona prompt는 12개 중 7개의 dataset에서 LLM의 추론 능력을 저하시킴
     - Jekyll & Hyde Framework는 모든 dataset에서 추론 능력을 향상시킴
     - LLM이 생성한 persona는 hand-crafted인 persona보다 일관된 성능을 보임
-- Limitations: Jekyll & Hyde 프레임워크는 각 질문에 대해 두 번의 추론과 평가를 수행하므로 계산 비용이 증가합니다.
-- Insight: Persona prompt가 항상 LLM의 성능을 향상시키지 않으며, 오히려 저해할 수 있음을 실험적으로 보여줌. Jekyll & Hyde Framework는 이를 완화하는 방법론임. 
+- Limitations: Jekyll & Hyde 프레임워크는 각 질문에 대해 두 번의 추론과 평가를 수행하므로 계산 비용이 증가 이슈 발생
+- Insight: Persona prompt가 항상 LLM의 성능을 향상시키지 않으며, 오히려 저해할 수 있음을 실험적으로 보여줌. 이 문제를 완화하기 위해, Jekyll & Hyde Framework를 제안. 
 
 ### Better Zero-Shot Reasoning with Role-Play Prompting (2024 NAACL, 173회 인용)
 - link: https://aclanthology.org/2024.naacl-long.228/
@@ -137,7 +137,7 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
 - Limitations
     - 한계: 데이터셋 크기가 52k로 제한적이며, 더 큰 규모의 데이터로 학습 시 성능 향상 가능성 존재. 
 - Insight
-    - ExpertPrompting은 LLM의 응답 품질을 전문가 수준으로 끌어올리는 간단하면서도 효과적인 방법으로, 프롬프트 엔지니어링의 중요성을 다시금 강조.
+    - ExpertPrompting은 LLM의 응답 품질을 전문가 수준으로 끌어올리는 간단하면서도 효과적인 방법으로, Persona Prompting의 중요성을 다시금 강조.
     - 의문점: 전문가 정체성의 품질이 응답에 미치는 구체적 영향(예: 정체성의 세부 수준 vs. 성능)과, 다양한 도메인에서의 일반화 가능성에 대한 추가 분석이 필요해 보임. 또한, GPT-4 평가의 객관성에 대한 의문이 남음.
 
 ## Summary & Insight
