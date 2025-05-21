@@ -42,16 +42,17 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
     - 역할 기반 프롬프트와 중립 프롬프트의 결과를 결합하여 추론 능력을 향상시키는 새로운 프레임워크인 Jekyll & Hyde를 제안했습니다.
     - LLM이 생성한 페르소나가 수작업으로 작성된 페르소나보다 더 안정적인 결과를 제공함을 발견했습니다.
 - Method: Jekyll & Hyde Framework
-    1. Persona Generator: LLM을 사용하여 주어진 질문에 적합한 페르소나를 자동으로 생성합니다.
-    2. Dual Solvers: Persona Solver & Neutral Sovler
-    3. Evaluator: 두 솔버의 답변을 비교하여 더 나은 답변을 선택합니다. 이 과정에서 응답 순서에 따른 위치 편향(position bias)을 완화하기 위해 다양한 순서로 평가를 반복합니다.
+    1. Persona Generator: LLM을 사용하여 주어진 질문에 적합한 페르소나를 자동으로 생성
+    2. Dual Solvers: Persona Solver (w/ persona prompt) & Neutral Sovler (w/o persona prompt) 각각에게 Answer 생성. 만약 두 answer가 일치한다면 final output 생성.
+    3. LLM Evaluator: 
 - Experiments
-    - Dataset
+    - Dataset (metric: Accuracy)
         - Arithmatic: Multi-Arith, GSM8K, AddSub, AQUA-RAT, SingleEq, SVAMP
         - Commonsense reasoning: CSQA, StrategyQA
         - Symbolic reasoning: Last Letter Concatenation, Coin Flip
         - Others: Data Understanding, Tracking Shuffled Objects
     - Model: GPT-4 (gpt-4-0613), GPT-3.5-turbo (gpt-3.5-turbo-0125), llama3
+    - Hyperparameters: k (max attempt) = 5, temperature = 0.7
     - Comparison
         - Base: only Neutral solver (w/o persona prompt)
         - Persona: only Persona solver (w/ persona prompt)
