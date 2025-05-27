@@ -20,9 +20,17 @@ LLM에게 특정 역할(ex. scientist)을 부여하여 그 역할에 맞는 어�
     - 페르소나의 성별, 유형, 도메인이 예측 정확도에 영향을 줄 수 있음을 추가 분석을 통해 제시했습니다.
 - Method
 - Experiments
-    - Dataset
-    - Model
-    - Baselines
+    - Dataset: [MMLU](https://huggingface.co/datasets/cais/mmlu)
+    - Prompt
+        - Speaker-Specific prompt: LLM (응답을 생성하는 자)에게 role을 할당하는 prompt (ex. You are a/an {role}, {question})
+        - Audience-Specific prompt: 청중 (응답을 듣는 자)을 구체화하는 prompt (ex. You are a talking to /an {role}, {quesiton})
+        - No Role: ex) {question}
+    - Persona: 164개 persona (= 112개 jobs, 50개 relationships)
+    - Model: 4개 open-sourced model
+        -  "google/flan-t5-xxl"
+        -  "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3-70B-Instruct"
+        -  "mistralai/Mistral-7B-Instruct-v0.2"
+        -  "Qwen/Qwen2.5-0.5B-Instruct", "Qwen/Qwen2.5-1.5B-Instruct", "Qwen/Qwen2.5-3B-Instruct", "Qwen/Qwen2.5-7B-Instruct", "Qwen/Qwen2.5-14B-Instruct", "Qwen/Qwen2.5-32B-Instruct", "Qwen/Qwen2.5-72B-Instruct"
     - 페르소나를 추가하는 것이 모델의 성능을 향상시키지 않으며, 일부 경우에는 오히려 성능이 저하되었습니다.
     - 성별 중립적이고 도메인과 일치하는 업무 관련 역할이 더 나은 성능을 보였지만, 효과는 미미하였습니다.
     - 페르소나의 단어 빈도, 프롬프트-질문 간 유사성, 퍼플렉서티 등의 요소가 성능 차이를 설명하는 데 제한적이었습니다
