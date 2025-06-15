@@ -9,6 +9,7 @@ ML/DL, NLP 관련 공부 기록
 <br><br>
 
 ## 📢 Note
+- `2025-06-15`: Code 폴더 업로드
 - `2025-03-29`: All_about_Agent/Agent.md 업로드
 <br><br>
 
