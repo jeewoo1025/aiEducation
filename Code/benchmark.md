@@ -233,6 +233,9 @@ def edit_similarity(original: str, generated: str, reference: str) -> float:
 ### OpenCoderEval
 - Github: https://github.com/OpenCoder-llm/OpenCoder-llm/tree/main/OpenCodeEval
 
+## QwenCoder-eval
+- Github:https://github.com/QwenLM/Qwen2.5-Coder/tree/main/qwencoder-eval
+
 ### BigCode Evaluation Harness 
 - GitHub: https://github.com/bigcode-project/bigcode-evaluation-harness
 - 주요 특징:
