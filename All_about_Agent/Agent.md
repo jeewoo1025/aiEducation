@@ -60,3 +60,23 @@ Agent가 이전의 failure로부터 배우도록 돕는 기법. 즉, Feedback을
 - Actor: state observations에 기반해 Action을 선택하고 실행
 - Evaluator: Actor가 만든 결과를 Scoring함
 - Self-reflection: Actor가 취한 Action과 Evaluator가 생성한 score를 돌아보며 평가함.
+
+## Agent vs Agentic System
+### ✅ 정의 (Definition)
+비유하자면 아래와 같음:
+* **Agent**: 혼자 일하는 유능한 직원
+* **Agentic System**: 부서 간 협업이 잘 이루어지는 스마트한 조직
+
+| 개념                            | 정의                                       |
+| ----------------------------- | ---------------------------------------- |
+| **Agent (에이전트)**              | 환경을 인식하고 특정 목표를 달성하기 위해 자율적으로 행동하는 단일 지능형 주체 (스스로 Planing하고 Action한다)   |
+| **Agentic System (에이전틱 시스템)** | 여러 Agent들이 상호작용하며 복잡한 목표를 달성하도록 설계된 통합 시스템 |
+
+
+### ✅ 참고 문헌 
+* OpenAI (2024), [Agentic AI 블로그](https://openai.com/blog/agentic-ai)
+* Microsoft (2023), [AutoGen Framework 논문](https://arxiv.org/abs/2309.00462)
+* Stanford CRFM (2024), [Agentic AI 정의](https://crfm.stanford.edu/2024/03/20/agentic-ai.html)
+* DeepMind (2023), *Communicative Agents*
+* ReAct (2022), [Reason + Acting 기반 Agent](https://arxiv.org/abs/2210.03629)
+
