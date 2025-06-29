@@ -230,10 +230,15 @@ def edit_similarity(original: str, generated: str, reference: str) -> float:
 <br>
 
 ## Github Example Code
+### HumanEval-X
+- [THUDM/CodeGeeX](https://github.com/THUDM/CodeGeeX): HumanEval-X를 개발한 THUDM의 CodeGeeX 프로젝트에서 HumanEval-X 데이터셋 공개함
+- [open-compass/code-evaluator](https://github.com/open-compass/code-evaluator
+): HumanEval-X를 포함한 여러 코드 데이터셋 평가를 위한 도구
+
 ### OpenCoderEval
 - Github: https://github.com/OpenCoder-llm/OpenCoder-llm/tree/main/OpenCodeEval
 
-## QwenCoder-eval
+### QwenCoder-eval
 - Github:https://github.com/QwenLM/Qwen2.5-Coder/tree/main/qwencoder-eval
 
 ### BigCode Evaluation Harness 
