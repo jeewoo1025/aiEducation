@@ -230,10 +230,22 @@ def edit_similarity(original: str, generated: str, reference: str) -> float:
 <br>
 
 ## Github Example Code
+### CodeJudge: Evaluating Code Generation with Large Language Models
+- https://github.com/VichyTong/CodeJudge
+- EMNLP 2024에 발표된 이 프로젝트는 코드 생성 모델 평가를 위한 프레임워크인 CodeJudge를 제공. HumanEval-X 데이터셋을 직접 사용하여 OpenAI 모델 (gpt-3.5-turbo-1106 등)을 포함한 다양한 모델로 코드를 생성하고 평가하는 샘플 스크립트를 제공.
+
 ### HumanEval-X
 - [THUDM/CodeGeeX](https://github.com/THUDM/CodeGeeX): HumanEval-X를 개발한 THUDM의 CodeGeeX 프로젝트에서 HumanEval-X 데이터셋 공개함
 - [open-compass/code-evaluator](https://github.com/open-compass/code-evaluator
 ): HumanEval-X를 포함한 여러 코드 데이터셋 평가를 위한 도구
+
+### EleutherAI/lm-evaluation-harness
+- https://github.com/EleutherAI/lm-evaluation-harness
+- 광범위한 LLM 평가 벤치마크를 통합한 강력한 프레임워크. HumanEval에 대한 지원이 포함되어 있으며, OpenAI 모델과의 연동도 가능. HumanEval-X를 직접 지원하지는 않을 수 있지만, HumanEval 평가 파이프라인을 구축하는 데 필요한 구조와 모범 사례를 제공.
+
+### OpenAI의 공식 evals 프레임워크
+- https://github.com/openai/evals
+- `openai/evals`는 OpenAI에서 직접 제공하는 LLM 및 LLM 시스템 평가를 위한 프레임워크. 자체적인 평가를 만들거나 기존 벤치마크를 실행하는 데 사용할 수 있음. HumanEval과 같은 코드 생성 벤치마크에 대한 평가 기능을 포함하고 있으며, OpenAI 모델의 성능을 평가하는 데 최적화되어 있음
 
 ### OpenCoderEval
 - Github: https://github.com/OpenCoder-llm/OpenCoder-llm/tree/main/OpenCodeEval
