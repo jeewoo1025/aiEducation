@@ -43,16 +43,19 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ▶ LaTex 기호 정리 : https://jjycjnmath.tistory.com/117
 <br><br>
 
-## RL 
+## 🎮🕹️👾 Reinforcement Learning (RL) 
 - 류경석 교수님 RL자료: https://ernestryu.com/courses/RL-LLM.html
 - OpenAI Deep RL: https://spinningup.openai.com/en/latest/
 - RL baselines: https://stable-baselines.readthedocs.io/en/master/
 - David Silver: https://davidstarsilver.wordpress.com/teaching/
 
-### Paper
+### RL
 - GAE Berkely 논문 (2016, ICLR): [High-Dimensional Continuous Control Using Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438)
+
+### RL + LLM
 - RLHF OpenAI 논문 (2022, NIPS): [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
 - DPO Stanford 논문 (2023, NIPS): [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)
+- DPO vs PPO 비교분석 논문 (2024, ICML): [Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study](https://arxiv.org/abs/2404.10719)
 - GRPO DeepSeek 논문 (2024): [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
 
 <br>
