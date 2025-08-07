@@ -9,6 +9,7 @@ ML/DL, NLP 관련 공부 기록
 <br><br>
 
 ## 📢 Note
+- `2025-08-07`: RL 업로드
 - `2025-06-15`: Code 폴더 업로드
 - `2025-03-29`: All_about_Agent/Agent.md 업로드
 <br><br>
@@ -95,7 +96,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 
 <br><br>
 
-## ⭐ NLP 필수 논문 (년도 순)
+## ⭐ Traditional NLP 필수 논문 (년도 순)
 <b>논문 년도 순서별로 읽는 걸 추천한다. </b> 왜냐하면, 이전 년도의 나온 논문들을 이해해야 현재 논문을 이해할 수 있기 때문! 
 예를들어, MASS paper를 알아야 BART paper를 정확히 이해할 수 있다.
 또한 유명한 논문들은 대부분 인용되어서 paper에 추가됨. 대표적인 예시) BERT paper에서 GPT와의 비교를 수행. 모두 2019년도에 publish됨. <br>
@@ -133,65 +134,6 @@ LLM 관련 최신 paper list를 찾아보려면 [Awesome-LLM](https://github.com
 |FLAN|Instruction-finetuning 처음으로 제시함.|
 <br>
 
-## Code 추천 논문
-Code LLM 관련 최신 논문들은 [Awesome-Code-LLM](https://github.com/codefuse-ai/Awesome-Code-LLM)을 참조하는 걸 추천한다.
-<br><br>
-
-## Text Summarization 추천 논문
-### Baseline model
-baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XSum dataset에서 많이 쓰인다. 
-* BART (ACL, 2020)
-* PEGASUS : Pre-training with Extracted Gap-sentences for Abstractive Summarization (ICML, 2020)
-<br>
-
-### Abstractive Summarization
-논문을 읽을 때 short와 long paper를 구분해서 읽기 바란다. long과 short paper 각각의 contribution이 크게 차이가 나기 때문. 
-* Abstractive Text Summarization using Sequence-to-Sequence RNNs and beyond (CONLL, 2016)
-* Text Summarization with Pretrained Encoders (EMNLP, 2019)
-* RefSum: Refactoring Neural Summarization (NAACL, 2019)
-* SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization (ACL short, 2021)
-* SummaReranker: A Multi-Task Mixture-of-Experts Re-ranking Framework for Abstractive Summarization (ACL, 2022)
-* BRIO: Bringing Order to Abstractive Summarization (ACL, 2022)
-<br>
-
-### Extractive Summarization
-* Extractive Summarization as Text Matching (ACL, 2020)
-* GSum: General Framework for Guided Neural Summarization (NAACL, 2021)
-<br>
-
-#### Contrastive Learning 추천 논문
-원래 Computer Vision에서 처음 소개된 기법이기 때문에 비전쪽 논문도 읽는 것을 추천함
-
-#### Computer Vision
-* A Simple Framework for Contrastive Learning of Visual Representations (ICML, 2020)
-* Understanding contrastive representation learning through alignment and uniformity on the hypersphere (ICML, 2020) (처음으로 contrastive learning의 잘되는 핵심적인 이유인 alignment과 uniformity analysis를 제시함.)
-
-### NLP
-* SimCSE: Simple Contrastive Learning of Sentence Embeddings (EMNLP, 2021)
-* Debiased Contrastive Learning of Unsupervised Sentence Representations (ACL, 2022)
-* A Contrastive Framework for Learning Sentence Representations from Pairwise and Triple-wise Perspective in Angular Space (ACL, 2022)
-<br>
-
-## 📊 성능 측정 방법
-1. **BLEU** 
-* Bilingual Evaluation Understudy
-* 기계번역의 성능이 얼마나 뛰어난가를 측정하기 위해 사용함
-* 기계 번역 결과와 사람이 직접 번역한 결과가 얼마나 유사한지 비교하여 번역에 대한 성능을 측정하는 방법
-* 높을 수록 성능이 더 좋다
-* 장점 : 언어에 구애받지 않음, 계산 속도가 빠름
-<br>
-<br>
-
-2. **ROUGE / ROUGE 2.0**
-* Recall-Oriented Understudy for Gisting Evaluation
-* github : https://github.com/bheinzerling/pyrouge
-* Text summarization의 성능을 측정하기 위해 사용함
-* ROUGE는 reference summary와 모델이 생성한 summary 사이에 겹치는 token이 많을수록 score가 높아진다. 하지만, 다른 단어라도 동일한 의미를 가지는 문장을 포함하지 않는다는 한계점이 있어서 이를 보완해서 나온게 ROUGE 2.0이다.
-* ROUGE 2.0은 synonymous(동의어)와 topic coverage를 포함하여 위의 issue를 보완하였다. → `ROUGE - {NN | Topic | TopicUniq} + Synonyms`
-* 그러나 여전히 완벽하게 score 매길 수 없지만 현재까지 가장 좋은 Evaluation 방법이라고 평가받는다.
-<br>
-<br>
-
 ## 📬 투고 
 * **Workshop** 
   * 대규모 학회는 시작할 때 앞뒤로 하루 규모의 workshop를 진행한다. 목적은 본 학회 참석자들이 specific한 키워드를 중심으로 모여서 진행하는 작은 학회같은 느낌. 보통 본 학회 내기 애매하거나 Working in Process를 공유하고 피드백 받는 자리이기도 하다.
@@ -211,47 +153,7 @@ baseline model로 BART가 주로 쓰이긴 한다. 하지만 Pegasus model도 XS
 <br>
 <br>
 
-## Dataset Download
-|Dataset|Domain|Train|Val|Test|Doc #Tokens|Sum #Tokens|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|XSum|News|204,045|11,332|11,334|437.21|23.87|
-|CNN/DM|News|287,113|13,368|11,490|782.67|58.33|
-
-### XSum
-* hungging face link :  https://huggingface.co/datasets/xsum
-* get dataset
-```
-import datasets
-
-dataset = datasets.load_dataset("xsum")
-```
-<br>
-
-### CNN/DM
-* hugging face link : https://huggingface.co/datasets/cnn_dailymail
-* get dataset
-```
-import datasets
-
-dataset = datasets.load_dataset("cnndm", "3.0.0")  # dataset name, version
-```
-<br>
-
-## 🔬 Library
-### Spacy 
-* link : https://spacy.io/usage/spacy-101#whats-spacy
-* English 자연어처리를 위한 Python 오픈소스 라이브러리. 
-* 지원 기능 : Tokenization, POS Tagging, Dependency Parsing, NER, Similarity ...
-```python
-import spacy
-nlp = spacy.load('en_core_web_sm')
-```
-<br>
-
 ##  📝  Study
-### ACL / EMNLP / NAACL
-* [ACL 2023: Generating Text from Language Models (ACL 2023: Tutorials)](https://rycolab.io/classes/acl-2023-tutorial/)
-
 ### 나동빈
 * [꼼꼼한 딥러닝 논문 리뷰와 코드 실습](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice)
 * [컴퓨터 공학과를 위한 최신 논문 찾아 읽는 방법 정리](https://www.youtube.com/watch?v=FPcdxHCxH_o)
