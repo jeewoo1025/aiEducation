@@ -51,6 +51,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 
 ### Paper
 - RLHF OpenAI 논문 (2022, NIPS): [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
+- DPO Stanford 논문 (2023, NIPS): [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)
 - GRPO DeepSeek 논문 (2024): [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
 
 <br>
