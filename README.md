@@ -49,6 +49,11 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 - RL baselines: https://stable-baselines.readthedocs.io/en/master/
 - David Silver: https://davidstarsilver.wordpress.com/teaching/
 
+### Paper
+- RLHF OpenAI 논문: [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
+
+<br>
+
 ## 🤖 LLMs
 ### Deepseek R1
 - `2025-01-22` Deepseek-R1: https://github.com/deepseek-ai/DeepSeek-R1
