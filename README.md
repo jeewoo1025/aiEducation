@@ -43,6 +43,12 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ▶ LaTex 기호 정리 : https://jjycjnmath.tistory.com/117
 <br><br>
 
+## RL 
+- 류경석 교수님 RL자료: https://ernestryu.com/courses/RL-LLM.html
+- OpenAI Deep RL: https://spinningup.openai.com/en/latest/
+- RL baselines: https://stable-baselines.readthedocs.io/en/master/
+- David Silver: https://davidstarsilver.wordpress.com/teaching/
+
 ## 🤖 LLMs
 ### Deepseek R1
 - `2025-01-22` Deepseek-R1: https://github.com/deepseek-ai/DeepSeek-R1
