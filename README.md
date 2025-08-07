@@ -50,7 +50,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 - David Silver: https://davidstarsilver.wordpress.com/teaching/
 
 ### Paper
-- RLHF OpenAI 논문: [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
+- RLHF OpenAI 논문 (2022, NIPS): [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
 
 <br>
 
