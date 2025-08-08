@@ -32,6 +32,12 @@
 - Dr. GRPO = 올바른 답이 짧아지도록 reward를 주는 방법.
   - Motivation > Length normalization bias: GRPO에서 풀이(답)이 길어지는 경우에는 답이 correct하든 incorrect든 loss에 영향을 주지 않는다. 모델 입장에서는 빨리 풀어버리면 reward를 받음. 하지만 포기를 할 경우에는 끊임없이 계속 길게 풀이하다가 답을 출력하면 받는 penalty가 최소화.
   - Paper: [Understanding R1-Zero-Like Training: A Critical Perspective](https://arxiv.org/abs/2503.20783) 
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](https://arxiv.org/abs/2501.17161)
+  - RLVR이 새로운 문제에 대한 일반화가 더 잘된다!
+- **Why does RL genelize well?**
+  - SFT는 명확한 negative feedback이 없지만 RL은 명확한 negative feedback을 제공함. 이러한 mechanism이 효율적인 학습이 가능하게 만든다라고 추측함
+- **Does RLVR learn new reasoning?**
+  - 가설: RL은 새로운 reasoning behavior를 가르치는 것이 아니라 pre-trained model이 이미 가지고 있는 reasoning pattern을 강화하는 것이다. ([Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](https://arxiv.org/abs/2504.13837))
 
 <br>
 
