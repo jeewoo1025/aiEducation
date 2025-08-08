@@ -16,7 +16,8 @@
   - 질문: 그럼 왜 이전에는 non-linear reaosning이 안됬을까? (__Why did RLVR suddenly work?__) 답변: [Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs](https://arxiv.org/abs/2503.01307)
     - 4가지 Cognitive behavior를 정의 (Verifications, Subgoal setting, Backtracking, Backward Chaining) 및 측정 → Qwen은 함. Llama은 안함. → 그 후, RLVR를 학습했을 때 위의 행동들을 Qwen만 CoT 길이도 길어지고 성능도 훨씬 올라감. 또한, Llama에게 cognitive behavior를 가르치면 RL이 잘 동작함.
     - 결론: **Llama2와 Llama3은 non-linear reasoning에 필요한 cognitive behavior가 존재하지 않았기 때문이다.**
-  - 질문: 왜 그러면 Llama에는 없었을까? 답변: Llama의 train dataset에는 non-linear reasoning이 없었기 때문! (추정: Llama는 OpenWebMath와 FineMath dataset을 사용하지 않았음. OpenWebMath에서는 사고의 흐름을 담은 과정이 담겨져 있는(ex. 이렇게 해봤더니 안되네...? 이렇게 해봐야지) math dataset임.) [Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs](https://arxiv.org/abs/2503.01307)
+  - 질문: 왜 그러면 Llama에는 없었을까? 답변: [Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs](https://arxiv.org/abs/2503.01307)
+    - Llama의 train dataset에는 non-linear reasoning이 없었기 때문! (추정: Llama는 [OpenWebMath](https://arxiv.org/abs/2310.06786)와 [FineMath](https://arxiv.org/abs/2502.02737) dataset을 사용하지 않았음. OpenWebMath에서는 사고의 흐름을 담은 과정이 담겨져 있는(ex. 이렇게 해봤더니 안되네...? 이렇게 해봐야지) math dataset임.) 
 - Majority vote (대표적인 test-time scaling 기법)은 여전히 유효한 방법임을 보여줌
 - Process reward models (PRM)과 MCTS가 잘 동작하지 않다고 보고함. Language Generation 경우에는 바둑과 달리, MCTS에서 실제로 수행해야 되는 Tree Search 규모가 커서 이득이 되지 않는다고 추측함.
   - PRM: 중간 과정을 체크하고 평가해서 훈련하는 모델
