@@ -49,6 +49,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 - OpenAI Deep RL: https://spinningup.openai.com/en/latest/
 - RL baselines: https://stable-baselines.readthedocs.io/en/master/
 - David Silver: https://davidstarsilver.wordpress.com/teaching/
+- Unsloth > RL Guide: https://docs.unsloth.ai/basics/reinforcement-learning-rl-guide
 
 ### RL
 - GAE Berkely 논문 (2016, ICLR): [High-Dimensional Continuous Control Using Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438)
