@@ -31,6 +31,9 @@ ML/DL, NLP 관련 공부 기록
 
 3. ACL, EMNLP, NAACL 등 ACL 계열 학회 같이 h5-index가 높은 학회들(Conference)에서 발표한 논문들로 최신 트렌드를 알 수 있다. 
 * [AI h5-index](https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_artificialintelligence), [NLP h5-index](https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_computationallinguistics)
+
+4. Deepseek, Qwen 등 기업들의 technical report를 읽는 것도 추천한다. 상세히 공개는 안되어있더라도 실제 유용한 tip들이 많이 적혀진 걸 확인할 수 있다 (오히려 conference paper보다 더 빠른 trend를 파악할 수도(?))
+- [Qwen2.5-Coder Technical Report](https://arxiv.org/abs/2409.12186)
 <br><br>
 
 ## 🍃 논문 작성법
