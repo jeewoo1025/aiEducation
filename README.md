@@ -55,6 +55,7 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 - David Silver: https://davidstarsilver.wordpress.com/teaching/
 - Unsloth > RL Guide: https://docs.unsloth.ai/basics/reinforcement-learning-rl-guide
 - [mlabonne/llm-cource > 5. Preference Alignment](https://github.com/mlabonne/llm-course?tab=readme-ov-file#5-preference-alignment) (⭐Star 59.6k)
+- [Transformer Reinforcement Learning X](https://github.com/CarperAI/trlx) (⭐Star 4.7k)
 
 ### RL
 - GAE Berkely 논문 (2016, ICLR): [High-Dimensional Continuous Control Using Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438)
