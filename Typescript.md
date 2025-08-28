@@ -14,7 +14,7 @@
 - src
   - package-lock.json: dependencies나 devDependencies에 명시된 라이브러리를 설치할 때 필요한 부수 라이브러리의 버전을 관리함. (자동 생성. 개발자가 직접 관리 X)
   - package.json: NPM 설정 파일. 프로젝트 이름, 버전, 라이선스 등 프로젝트와 관련된 기본 정보가 들어감. 
-  - tsconfig.json
+  - tsconfig.json: typescript 설정 파일. 타입스크립트 컴파일을 돌릴 파일 목록, 배제할 목록, 컴파일러에 대한 구체적인 동작 옵션 지정 가능.
 
 
 ### 기본 타입
@@ -139,5 +139,67 @@ setLocation([37.5665, 126.9780]);          // 좌표 출력
 handleValue("hello");                      // "hello"
 handleValue(123);                          // "123"
 ```
+
+### 인터페이스
+- 객체 타입을 정의할 때 사용하는 문법 
+- `extends` 키워드를 통해 상속이 가능하며 하나의 인터페이스는 여러 인터페이스를 동시에 상속할 수 있는 다중상속도 지원함
+```typescript
+// 기본 인터페이스 정의
+interface Person {
+  name: string;
+  age: number;
+  email?: string; // 선택적 프로퍼티
+}
+
+// 인터페이스 상속 예시
+interface Employee extends Person {
+  employeeId: string;
+  department: string;
+}
+
+// 다중 인터페이스 상속 예시
+interface Flyable {
+  fly(): void;
+}
+
+interface Bird extends Person, Flyable {
+  canFly: boolean;
+  layEggs(): void;
+}
+
+// 함수 파라미터로 사용하는 인터페이스
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+}
+
+function processProduct(product: Product): void {
+  console.log(`Processing ${product.name} with price ${product.price}`);
+}
+
+// 클래스 구현 예시
+interface Drawable {
+  draw(): void;
+}
+
+class Circle implements Drawable {
+  draw() {
+    console.log("Drawing a circle");
+  }
+}
+```
+
+### 타입 별칭 (type alias)
+- 특정 타입이나 인터페이스 등을 참조할 수 있는 타입 변수; 즉, 타입에 의미를 부여해서 별도의 이름을 부르는 것
+- 
+
+
+
+
+
+
+
+
 
 
