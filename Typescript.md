@@ -9,6 +9,9 @@
   - 에러의 사전 방지: 실제로 코드 실행 전, 미리 에러를 검출 가능
   - 코드 가이드 및 자동완성: VSCode에서 빠른 개발 지원 가능
 
+## 개발환경 구축
+- [ [Typescript] 개발 환경 구축 ](https://tango1202.github.io/typescript/typescript-config/)
+
 ## 프로젝트 폴더 구조
 - node_modules: 실습에 필요한 라이브러리 설치되어있음. 
 - src
