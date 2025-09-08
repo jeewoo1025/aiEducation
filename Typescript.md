@@ -11,6 +11,7 @@
 
 ## 개발환경 구축
 - [ [Typescript] 개발 환경 구축 ](https://tango1202.github.io/typescript/typescript-config/)
+- [Typescript 기초 포스팅](https://inpa.tistory.com/category/Language/TypeScript?page=2)
 
 ## 프로젝트 폴더 구조
 - node_modules: 실습에 필요한 라이브러리 설치되어있음. 
