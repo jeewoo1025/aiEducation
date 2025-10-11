@@ -67,6 +67,12 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 - DPO vs PPO 비교분석 논문 (2024, ICML): [Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study](https://arxiv.org/abs/2404.10719)
 - GRPO DeepSeek 논문 (2024): [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
 
+### Post Training Libraries
+- [Huggingface TRL](https://github.com/huggingface/trl)
+- [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)
+- [veRL](https://github.com/volcengine/verl)
+- [Nemo RL](https://github.com/NVIDIA-NeMo/RL)
+
 <br>
 
 ## 🤖 LLMs
