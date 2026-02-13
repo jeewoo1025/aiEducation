@@ -48,6 +48,28 @@ Latex는 Conference, Journal 등 논문을 작성할 수 있도록 도와주는 
 ▶ LaTex 기호 정리 : https://jjycjnmath.tistory.com/117
 <br><br>
 
+## Activation Steering
+### Repository
+- [(IBM) activation-steering](https://github.com/IBM/activation-steering)
+
+### Paper
+- ActAdd: Steering language models with activation engineering (2023-08 arXiv)
+- Inference-Time Intervention (ITI): Inference-Time Intervention: Eliciting Truthful Answers from a Language Model. (NIPS 2023 Spotlight)
+- Contrastive Activation Addition: Steering Llama 2 via Contrastive Activation Addition (ACL 2024)
+- HyperSteer: Activation Steering at Scale with Hypernetworks (2025-06 arXiv)
+- Steerable Chatbots: Personalizing LLMs with Preference-Based Activation Steering (2025-05 arXiv)
+- BILLY: Steerings LLMs via Merging Persona Vectors for Creative Generation (2025-10 arXiv)
+- AI Safety
+   - Refusal in language models is mediated by a single direction (2024-06 arXiv)
+   - Programming Refusal with Conditional Activation Steering (ICLR 2025 Spotlight)
+- Personality Steering
+   - Identifying and Manipulating Personality Traits in LLMs Through Activation Engineering (2024-12 arXiv)
+   - Activation-Space Personality Steering: Hybrid Layer Selection for Stable Trait Control in LLMs (2025-10 arXiv)
+- Reasoning
+   - Improving Reasoning in LLMs via Representation Engineering (2025-04 arXiv)
+   - Steering LLMs' Reasoning with activation state machines (2025-09 OpenReview)
+<br>
+
 ## 🎮🕹️👾 Reinforcement Learning (RL) 
 - 류경석 교수님 RL자료: https://ernestryu.com/courses/RL-LLM.html
 - OpenAI Deep RL: https://spinningup.openai.com/en/latest/
